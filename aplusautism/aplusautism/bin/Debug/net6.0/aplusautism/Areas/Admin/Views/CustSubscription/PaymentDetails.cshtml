@@ -1,0 +1,147 @@
+﻿
+@model aplusautism.Bal.DTO.PaymentsDTO
+<div class="main-content container-fluid">
+    <div class="lessons" style="pointer-events: all;">
+        <div class="mb-2 align-items-center row mx-0">
+            <div class="col-md-6">
+                <div class="row">
+                    <h4 class="text-muted text-bold">Payment Details</h4>
+                </div>
+            </div>
+        </div>
+
+    <form id="signupform" asp-area="Admin" asp-action="PaymentDetails" asp-controller="CustSubscription" method="post" asp class="col-12 px-0">
+        <div class="card">
+            <div class="card-body">
+                <div class="col-12">
+                    <div class="mb-2 align-items-center row">
+                        <div class="col-md-8"></div>
+                        <div class="col-md-4">
+                          
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mt-3">
+                    <div class="row">
+                        <div class="table-responsive">
+                            <div class="col-12">
+                            <div class="row mb-3 mx-0 mb-lg-0">
+                                <div class="form-group col-12 col-sm-12 col-md-12 col-lg-auto">
+                                    <div class="form-row">
+                                        <label class="col-form-label mr-2">Start Date:</label>
+                                        <input type="date" id="StartDate" name="StartDate" class="form-control col">
+                                    </div>
+                                </div>
+                                <div class="form-group col-12 col-sm-12 col-md-12 col-lg-auto">
+                                    <div class="form-row">
+                                        <label class="col-form-label mr-2">End Date:</label>
+                                        <input type="date" id="EndDate" name="EndDate" class="form-control col" onchange="CheckForDate();">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-12 text-right col-lg-auto">
+                                    <button style="margin-top:-2px;" type="submit" class="btn btn-primary btn-md rounded-0">Search</button>
+                                    <button style="margin-top:-2px;" type="submit" class="btn btn-primary btn-md rounded-0">Reset</button>
+                                </div>
+                            </div>
+                            <table id="paymenttable" class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th style="text-align:left;">Name of Client</th>
+                                        <th style="text-align:left;">Email</th>
+                                        <th style="text-align:left;">Subscription Plan</th>
+                                        <th style="text-align:left;">Date on Funds Received</th>
+                                        <th style="text-align:right;">Amount</th>
+                                        <th style="text-align:left;">Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @if (@ViewBag.PaymentDetailslist != null)
+                                    {
+                                        @foreach (var paymentList in (List<aplusautism.Bal.DTO.PaymentsDTO>)ViewBag.PaymentDetailslist)
+                                        {
+                                            <tr>
+                                                  <td  style="text-align:left"><a href="~/Admin/CustSubscription/ClientProfile?ClientId=@paymentList.AB_UserID&Clientstatus='Payment'">@paymentList.UserName</a></td>  
+                                                  <td  style="text-align:left"><a href="~/Admin/CustSubscription/ClientProfile?ClientId=@paymentList.AB_UserID&Clientstatus='Payment'">@paymentList.Email</a></td>                                            
+                                                <td style="text-align:left">@paymentList.SchemeName</td>
+                                                <td style="text-align:left">@paymentList.PayDate</td>
+                                                        <td style="text-align:right">@String.Format("{0:C}",@paymentList.Amount)</td>
+                                                @if (@paymentList.PaymentStatus == true)
+                                                {
+                                                    <td style="color:green;text-align:left;"><b>Success</b></td>
+                                                }
+                                                else
+                                                {
+                                                    <td style="color:red;text-align:left;"><b>Failed</b></td>
+                                                }
+                                            </tr>
+                                        }
+                                    }
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+</div>
+
+    <script type="text/javascript">
+        function CheckForDate() {
+            var StartDate = $('#StartDate').val();
+            var EndDate = $('#EndDate').val();
+           
+            var checkStartDate = dateFormat(StartDate,'MM-dd-yyyy');
+            var checkEndDate = dateFormat(EndDate,'MM-dd-yyyy');
+            if (checkStartDate > checkEndDate) {
+                alert("End Date must be greater than start date.");
+                $('#StartDate').val("");
+                $('#EndDate').val("");
+            }
+        }
+
+        function dateFormat(inputDate, format) {
+            //parse the input date
+            const date = new Date(inputDate);
+
+            //extract the parts of the date
+            const day = date.getDate();
+            const month = date.getMonth() + 1;
+            const year = date.getFullYear();
+
+            //replace the month
+            format = format.replace("MM", month.toString().padStart(2, "0"));
+
+            //replace the year
+            if (format.indexOf("yyyy") > -1) {
+                format = format.replace("yyyy", year.toString());
+            } else if (format.indexOf("yy") > -1) {
+                format = format.replace("yy", year.toString().substr(2, 2));
+            }
+
+            //replace the day
+            format = format.replace("dd", day.toString().padStart(2, "0"));
+
+            return format;
+        }
+    </script>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#paymenttable').dataTable({
+           "pagingType": "full_numbers",
+           "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
+             order: [[3, 'desc']],
+         });
+    });
+
+</script>
+
+<script>
+$(".sidebar-section #lm_Admin").addClass('active');
+</script>
+    

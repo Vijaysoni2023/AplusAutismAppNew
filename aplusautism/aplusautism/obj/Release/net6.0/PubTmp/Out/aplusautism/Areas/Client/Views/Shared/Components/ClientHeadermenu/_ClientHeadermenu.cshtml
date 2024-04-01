@@ -1,0 +1,125 @@
+﻿@model aplusautism.Models.UserModel
+
+
+<nav id="header" class="navbar navbar-expand navbar-dark">
+    <span id="navbar-logo">
+        @*<h5 class="text-bold text-white m-0">Welcome @Model.UserFullName</h5>*@
+    </span>
+    <span id="bars" class="d-inline-block align-middle mx-2 cursor-pointer">
+        <i class="fa fa-bars font-size-25 text-white"></i>
+    </span>
+    
+       <ul id="navbar-user" class="ml-3 ms-auto align-items-center navbar-nav">
+            <li>Last Login On</li>
+          @*  <li>
+              <a href="subscription-plans.html">Subscription Plan</a>
+            </li>*@
+        </ul>
+    <ul id="navbar-user" class="ml-3 ms-auto align-items-center navbar-nav">
+        <li style="text-transform:uppercase;">@DateTime.Now.ToShortDateString()</li>
+    </ul>
+    <ul id="navbar-items-right" class="ml-auto align-items-center navbar-nav">
+        <li class="btn-group nav-item">
+            <a aria-haspopup="true" href="#" class="py-0 nav-link" aria-expanded="false">
+                <span class="user-avatar" style="line-height: 32px; height: 32px; width: 32px; background-color: yellowgreen;text-transform: uppercase;">@Model.UserFullName.Substring(0,1)</span>
+                <span class="d-none d-md-inline-block align-middle text-white">Welcome @Model.UserFullName</span>
+            </a>
+            
+            <div tabindex="-1" role="menu" aria-hidden="false" class="dropdown-menu dropdown-menu-right">
+                <div tabindex="0" role="menuitem" class="dropdown-item">
+                    <button type="button" class="btn btn-link btn-sm" onclick="location.href='@Url.Action("LogOutUser", "ClientPortal")'">
+                        @*<button asp-area="Customer" asp-action="LogOutUser" asp-controller="CustSubscription" type="submit" class="btn btn-link btn-sm">*@
+                        <i class="fa fa-sign-out mr-2"></i>Sign Out
+                    </button>
+                </div>
+            </div>
+        </li>
+    </ul>
+</nav>
+
+<script>
+   
+    var sessionTimeout = 20; //"//= Session.Timeout %>";
+    var timeIntervalLogoutWarning = 10;
+    var pretimecheckalert = sessionTimeout - timeIntervalLogoutWarning;    // two minute will come before session time out
+    var timeOutSetting;
+    // NewSessionTimeOutWithPara('test');
+    //For Multiple tab : END
+    //$(document).ready(function(){
+    //    alert('hi');
+    //    location.href = 'https://localhost:7253/Client/ClientPortal/SessionLive';
+    //});
+    $(document).click(function () {
+        try {
+            //location.href = 'https://localhost:7253/Client/ClientPortal/SessionLive';
+            var IsAlreadyExecuted = false;
+            /* THIS TWO TRY CATCH BLOCK ADDED FOR THE INCREASING THE TIME OUT, REST COMMENTON ON HEADER.ASCX PAGE Common\header.ascx
+            */
+
+            try {
+                // NewSessionTimeOutWithPara('Called by Common Page');
+            } catch (e) {
+            }
+
+
+
+        } catch (e) {
+
+        }
+
+    });
+
+    //function NewSessionTimeOutWithPara(text) {
+    //    var today = new Date();
+    //    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+
+    //    var validURL = window.location.href;
+    //    var IsCRM = validURL.indexOf("150");
+    //    //alert(IsCRM);
+    //    //if (IsCRM != -1) {
+    //    //    // alert('time cleared');
+    //    //    //clearTimeout(Prealert);
+    //    //    resetTime();
+    //    //    clearTimeout(timeOutSetting);
+    //    //    timeOutSetting = setTimeout('RedirectToLoginPagePara("' + text + '")', parseInt(sessionTimeout) * 60 *  1000);
+    //    //}
+    //    //else {
+    //    //    //--start 24-7-2020 changes--%>
+    //    //        try {
+    //    //            resetTime();
+    //    //        } catch (e) {
+
+    //    //        }
+
+
+    //    //    //--End 24-7-2020 changes--%>
+
+    //    //    clearTimeout(timeOutSetting);
+
+
+    //    //    //To redirect to the Login page
+
+    //    //    timeOutSetting = setTimeout('RedirectToLoginPagePara("' + text + '")', parseInt(sessionTimeout)  * 60 *  1000);
+    //    //}
+    //    try {/*IT IS REQURIED BECAUSE FIRST TIME CONTROLS NOT GENERATED*/
+    //        //document.getElementById('lblRefreshTimeheader').innerHTML = String('USER ACTION ON ' + time + ' LOGOUT WILL EXECCUTE AFTER ' + sessionTimeout + ' MINUTES');
+    //        //clearTimeout(timeOutSetting);
+    //        clearTimeout(timeOutSetting);
+    //        timeOutSetting = setTimeout('RedirectToLoginPagePara("' + text + '")', parseInt(sessionTimeout) * 60 * 1000);
+    //    } catch (e) {
+
+    //    }
+    //}
+    //function RedirectToLoginPagePara(text) {
+    //    alert("Session expired. You will be redirected to Login page :", null, function () { location.href = '/Admin/CustSubscription/LogOutUser' });
+    //    location.href = '/Admin/CustSubscription/LogOutUser';
+    //    /* NOTE: THERE IS PROBLEM WHEN USERS OPEN THE CONTACT LOG PAGE, BECAUSE THE CONTACT LOG PAGE NOT OPENING ISSIDE THE APPLICAITON (it is opening as next to popup )
+    //    IN THIS COMMETN ABOVE jAlert AND UNCOMMENT THE WEBSERIVE REST ALL WILL WORK.
+    //    CommonWebServices.IsSessionOut('0', IsSessionOutOnSucess);
+    //    */
+
+
+    //}
+
+
+</script>

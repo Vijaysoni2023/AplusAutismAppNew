@@ -1,0 +1,408 @@
+﻿@model IEnumerable<aplusautism.Bal.DTO.LessonDetailsbycategoryDTO>
+
+
+<div class="main-content container-fluid" style="position:relative;">
+    <div class="row">
+        @* <div style="display:none;">
+        <button id="id-stop-button" disabled>
+        Stop and clear MediaStream
+        </button>
+        <h3 id="id-title">Device labels</h3>
+        <div id="id-device-labels"></div>
+        </div>*@
+      @{
+            var VideoPath ="";
+      }
+       
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header clientdashboard">
+                    <div class="col-md-12">
+                        <div class="row" id="lesson-category-block">
+                            <ul class="list-unstyled mb-0">
+                                @foreach (var lessoncategorydata in Model.ToList())
+                                {
+                                    <li>
+                                        <a style="display:none;" href="#">@lessoncategorydata.Categoryname</a>
+                                        <ul class="list-unstyled mb-0">
+
+                                            @if (lessoncategorydata != null)
+                                            {
+                                                @foreach (var lessiondetails in lessoncategorydata.Lessondeatils)
+                                                {
+
+                                                    @* <li id="@lessiondetails.LessonSetupID">
+                                                    <a href="" class="lessonvideo" onclick="playvideo(@lessiondetails.LessonVideoPath)" data-videourl="@lessiondetails.LessonVideoPath">@lessiondetails.LessonTitle</a>
+
+                                                    </li>*@
+
+                                                    @if (@ViewBag.ClientStatusCheck == "1")
+                                                    {
+                                                        @* Commented by S for hide title *@
+                                                        @* <li id="@lessiondetails.LessonSetupID">
+                                                        <a href="" class="lessonvideo" data-videourl="@lessiondetails.LessonVideoPath">@lessiondetails.LessonTitle</a>
+                                                        @*<a href="" class="lessonvideo" onclick="playvideo(@lessiondetails.LessonVideoPath)" data-videourl="@lessiondetails.LessonVideoPath">@lessiondetails.LessonTitle</a>
+
+                                                        </li>*@
+                                                    }
+                                                    else if (@ViewBag.ClientStatusCheck == "3")
+                                                    {
+                                                        @* Commented by S for hide title *@
+                                                        @*<li id="@lessiondetails.LessonSetupID">
+                                                        <a href="" class="lessonvideo" data-videourl="@lessiondetails.LessonTrailVideoPath">@lessiondetails.LessonTitle</a>
+                                                        @* <a href="" class="lessonvideo" onclick="playvideo(@lessiondetails.LessonTrailVideoPath)" data-videourl="@lessiondetails.LessonTrailVideoPath">@lessiondetails.LessonTitle</a>
+                                                        </li>*@
+                                                    }
+                                                }
+                                            }
+
+                                        </ul>
+                                    </li>
+                                }
+
+                            </ul>
+                        </div>
+                    </div>
+                    @* <h6 class="mb-0">Lesson Details </h6>*@
+                    <input class="btn btn-md btn-primary" hidden type="button" onclick="myfunction()" value="Display">
+                    @*  <button onclick="pauseVideo()" hidden type="button">
+                    </button>*@
+                </div>
+               
+                <div class="card-body">
+                    <div class="lesson-category">
+                        <div class="row">
+                            @* <div class="col-md-5 mb-4 mb-md-0 order-2 order-md-1">
+                            <div id="lesson-category-block">
+                            <ul class="list-unstyled mb-0">
+                            @foreach (var lessoncategorydata in Model.ToList())
+                            {
+                            <li>
+                            <a style="display:none;" href="#">@lessoncategorydata.Categoryname</a>
+                            <ul class="list-unstyled mb-0">
+
+                            @if (lessoncategorydata != null)
+                            {
+                            if (lessoncategorydata.Lessondeatils != null)
+                            {
+                            @* <li id="@lessiondetails.LessonSetupID">
+                            <a href="" class="lessonvideo" onclick="playvideo(@lessiondetails.LessonVideoPath)" data-videourl="@lessiondetails.LessonVideoPath">@lessiondetails.LessonTitle</a>
+
+                            </li>
+
+                            @if (@ViewBag.ClientStatusCheck == "1")
+                            {
+                            <li id="@lessiondetails.LessonSetupID">
+                            <a href="" class="lessonvideo"  data-videourl="@lessiondetails.LessonVideoPath">@lessiondetails.LessonTitle</a>
+                            @*<a href="" class="lessonvideo" onclick="playvideo(@lessiondetails.LessonVideoPath)" data-videourl="@lessiondetails.LessonVideoPath">@lessiondetails.LessonTitle</a>
+
+                            </li>
+                            }
+                            else if(@ViewBag.ClientStatusCheck == "3")
+                            {
+                            <li id="@lessiondetails.LessonSetupID">
+                            <a href="" class="lessonvideo"  data-videourl="@lessiondetails.LessonTrailVideoPath">@lessiondetails.LessonTitle</a>
+                            @* <a href="" class="lessonvideo" onclick="playvideo(@lessiondetails.LessonTrailVideoPath)" data-videourl="@lessiondetails.LessonTrailVideoPath">@lessiondetails.LessonTitle</a>
+
+                            </li>
+                            @foreach (var lessiondetails in lessoncategorydata.Lessondeatils)
+                            {
+
+                            @* <li id="@lessiondetails.LessonSetupID">
+                            <a href="" class="lessonvideo" onclick="playvideo(@lessiondetails.LessonVideoPath)" data-videourl="@lessiondetails.LessonVideoPath">@lessiondetails.LessonTitle</a>
+
+                            </li>
+
+                            @if (@ViewBag.ClientStatusCheck == "1")
+                            {
+                            <li id="@lessiondetails.LessonSetupID">
+                            <a href="" class="lessonvideo" onclick="playvideo(@lessiondetails.LessonVideoPath)" data-videourl="@lessiondetails.LessonVideoPath">@lessiondetails.LessonTitle</a>
+
+                            </li>
+                            }
+                            else if (@ViewBag.ClientStatusCheck == "3")
+                            {
+                            <li id="@lessiondetails.LessonSetupID">
+                            <a href="" class="lessonvideo" onclick="playvideo(@lessiondetails.LessonTrailVideoPath)" data-videourl="@lessiondetails.LessonTrailVideoPath">@lessiondetails.LessonTitle</a>
+
+                            </li>
+                            }
+                            }
+                            }
+                            }
+
+                            </ul>
+                            </li>
+                            }
+
+                            </ul>
+                            </div>
+                            </div>*@
+                            <div class="col-md-12 order-1 order-md-2">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="video-frame">
+
+                                            @*<video id="Maintag"
+                                                    muted 
+                                                    autoplay loop
+                                                    style="width:100%;max-height:100%;">
+                                                    <source src="">
+                                            </video>*@
+
+                                           @* <video style="width:100%;max-height:100%;" autoplay loop id="Maintag">
+                                                <source src="" type="video/mp4">
+                                                <source src="">
+                                                Your browser does not support HTML5 video.
+                                            </video>*@
+
+                                            <video style="width:100%;max-height:100%;" autoplay muted loop controls playsinline preload='auto' controlsList="nodownload" id="Maintag">
+                                            @*<video style="width:100%;max-height:100%;" autoplay muted loop controls playsinline preload='none' controlsList="nodownload" id="Maintag">*@
+                                            <source src="">
+                                            Your browser does not support HTML5 video.
+                                            </video>
+                                            @* height="270" width="480">*@
+
+                                            <div class="btngrup-row">
+                                                <div class="col-md-12">
+                                                    <h3>Controls</h3>
+                                                </div>
+                                                <div class="controls-block">
+                                                    @*  <button id="myBtn" class="btn btn-info" onclick="myFunction()">Pause</button>
+                                                    <button id="myMuteBtn" class="btn btn-info" onclick="MuteButton()">Mute</button>*@
+                                                    <button id="myunMuteBtn" class="btn btn-info" onclick="UnMuteButton()">Un Mute</button>
+                                                    <button id="fullscreen" class="btn btn-success" onclick="goFullscreen('Maintag'); return false">Full Screen</button>
+                                                </div>
+                                            </div>
+                                            @* <video style="width:100%;max-height:100%;" autoplay muted loop controls playsinline preload='none' controlsList="nodownload" id="lessonvideoclient">
+                                            <source src="" type="video/mp4">
+
+                                            Your browser does not support the video tag.
+                                            </video>
+                                            <h6>Video Player</h6>*@
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @* <video autoplay loop id="Maintag">
+        <source src="" type="video/mp4">
+        Your browser does not support HTML5 video.
+        </video>
+
+        <div class="col-md-12">
+        <button id="myBtn" class="btn btn-md btn-primay" onclick="myFunction()">Pause</button>
+        </div>*@
+    </div>
+</div>
+
+
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial;
+        font-size: 17px;
+    }
+
+    /* #Maintag {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+           /* min-width: 100%;
+            min-height: 100%;*/
+    }
+
+    */
+
+    .content {
+        /* position: fixed;*/
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        color: #f1f1f1;
+        width: 100%;
+        padding: 20px;
+    }
+
+</style>
+
+<script src="~/custom_js/clientlessondetails.js"></script>
+
+
+
+<script type="text/javascript">
+    var video = document.getElementById("Maintag");
+    var btn = document.getElementById("myBtn");
+
+    function myFunction() {
+        if (video.paused) {
+            video.play();
+            btn.innerHTML = "Pause";
+        } else {
+            video.pause();
+            btn.innerHTML = "Play";
+        }
+    }
+    function goFullscreen(id) {
+        var element = document.getElementById(id);
+        if (element.mozRequestFullScreen) {
+            element.mozRequestFullScreen();
+        } else if (element.webkitRequestFullScreen) {
+            element.webkitRequestFullScreen();
+        }
+    }
+
+    function MuteButton() {
+        $("#myMuteBtn").css("display", "none");
+        $("#myunMuteBtn").css("display", "block");
+
+        $("#Maintag").prop('muted', true);
+    }
+
+    function UnMuteButton() {
+        $("#myMuteBtn").css("display", "block");
+        $("#myunMuteBtn").css("display", "none");
+        $("#Maintag").prop('muted', false);
+    }
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+    });
+</script>
+<script type="text/javascript">
+    $(".sidebar-section #lm_clientDashboard").addClass('active');
+</script>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        //$("#myunMuteBtn").css("display", "none");
+        GetIpAddress();
+        var trailPath = '';
+        var FullPath = '';
+        var MobileVideoPAth = '';
+        var videopath = trailPath;
+
+        var trailPath = '@ViewBag.LessonTrailVedio';
+        var FullPath = '@ViewBag.LessonFullVedio';
+        var MobileVideoPAth = '@ViewBag.LessonMobileVedio';
+
+        var videopath = trailPath;//$(this).attr("data-videourl");
+        var MobVideo = MobileVideoPAth;
+        // for getting Device detail if mobile or Desktop
+        let details = navigator.userAgent;
+        let regexp = /android|iphone|kindle|ipad/i;
+        let isMobileDevice = regexp.test(details);
+        if (!isMobileDevice) {
+
+            var Maintag = document.getElementById('Maintag');
+            Maintag.crossOrigin = 'anonymous';
+            Maintag.src = "/" + videopath;
+          
+            Maintag.load();
+            Maintag.play();
+
+            //alert("Mobile");
+            // document.write("<h3>Its a Mobile Device !</h3>");
+        } else {
+
+            var Maintag = document.getElementById('Maintag');
+            Maintag.crossOrigin = 'anonymous';
+            Maintag.src = "/" + MobVideo;
+           
+            Maintag.load();
+            Maintag.play();
+        //    //alert("Desktop");
+        //    //  document.write("<h3>Its a Desktop !</h3>");
+        }
+
+        //var Maintag = document.getElementById('Maintag');
+        //Maintag.crossOrigin = 'anonymous';
+        //Maintag.src = "~/newfolder2/forest%20farsi%201%20mobile_2.mp4"   /*"/" + videopath;*/
+        //Maintag.load();
+        //Maintag.play();
+
+        return false;
+    });
+
+    function GetIpAddress()
+    {
+        $.getJSON("https://api.ipify.org?format=json", function(data) {
+         
+        // Setting text of element P with id gfg
+        alert(data.ip);
+    })
+    }
+    function SaveDeviceTrackings(Value) {
+
+        $.ajax({
+            type: "POST",
+            url: "/Admin/CustSubscription/SaveDeviceTracking?" + $.param({ DeviceId: Value }),
+            data: Value,
+            success: function (result) {
+            }
+        });
+    }
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*<!doctype html>
+<html>
+<head>
+    <title>Simple Movie Player</title>
+</head>
+<body>
+    <div class="video-frame">
+        <video src="~/newfolder2/forest%20farsi%201%20mobile_2.mp4"
+               controls
+               autoplay loop
+               height="270" width="480">
+        </video>
+    </div>
+</body>
+</html>
+
+<script>
+</script>
+*@

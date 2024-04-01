@@ -1,0 +1,156 @@
+﻿@model IEnumerable<aplusautism.Data.Models.SubscriptionSetup>
+
+
+ 
+        
+          <div class="main-content container-fluid">
+            <div class="lessons" style="pointer-events: all;">
+              <div class="card">
+                <div class="card-body">
+                    <section class="pricing-section">
+                        <div class="container-fluid">
+                            <div class="sec-title text-center">
+                                <span class="title">Get plan</span>
+                                <h2 class="mb-0 text-muted text-bold">Edit Subscription Plan</h2>
+                            </div>
+                            <div class="outer-box">
+                                <div class="row">
+                                    <!-- Pricing Block -->
+
+                                    @foreach(var subscriptiondata in  Model.ToList())
+                                    {
+                                    <div class="pricing-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                                        <div class="inner-box">
+                                            <div class="icon-box">
+                                                <div class="icon-outer">
+                                                  <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                                        <div class="price-box" id="originplan_@subscriptiondata.SubscriptionSetupID">
+
+                                                            @if(subscriptiondata.DurationType=="M")
+                                                            {
+                                                                <div class="title"><label id="originplanduration_@subscriptiondata.SubscriptionSetupID">@subscriptiondata.Duration Months</label></div>
+                                                            }
+                                                           
+                                                              @if(subscriptiondata.DurationType=="Y")
+                                                            {
+                                                                <div class="title"><label id="originplanduration_@subscriptiondata.SubscriptionSetupID">@subscriptiondata.Duration year</label></div>
+                                                            }
+
+                                                                <h4 class="price">
+                                                                <label id="originplanprcie_@subscriptiondata.SubscriptionSetupID">  $ @subscriptiondata.Price </label>
+                                                                </h4>
+                                                   </div>
+
+
+                                           @* //this div will be visible when edit plan will be clicked*@
+
+                                                        <div id="editplan_@subscriptiondata.SubscriptionSetupID" class="price-box" style="display:none">
+                                                            <div class="title"><input type="text" id="editMonth_@subscriptiondata.SubscriptionSetupID" class="inputwidth" />
+                                                                
+                                                            <label id="Editplandurationlable_@subscriptiondata.SubscriptionSetupID"> </label>
+                                                            </div>
+                                                            <h4 class="price">
+                                                                $ <input type="text" id="editPrice_@subscriptiondata.SubscriptionSetupID" class="inputwidth" />
+                                                            </h4>
+                                                           </div>
+
+                                            <ul class="features">
+                                                <li class="true">Certificate</li>
+                                                <li class="false">Easy Access</li>
+                                                <li class="false">Free Contacts</li>
+                                            </ul>
+
+                                                        <div class="btn-box" id="originplanDivbutton_@subscriptiondata.SubscriptionSetupID">
+                                                        <a  onclick="EditPlan(@subscriptiondata.SubscriptionSetupID)" class="theme-btn">Edit Plan</a>
+                                                       </div>
+
+                                                     @*  //this button will show when edit button will be click*@
+                                                         <div class="btn-box" id="UpdateDivanbutton_@subscriptiondata.SubscriptionSetupID" style="display:none">
+                                                        <a  onclick="UpdatePlan(@subscriptiondata.SubscriptionSetupID)" class="theme-btn">Update Plan</a>
+
+                                                            <a onclick="CancelPlan(@subscriptiondata.SubscriptionSetupID)" class="theme-btn btn-danger">Cancel</a>
+                                                       </div>
+
+                                        </div>
+                                    </div>
+
+                                    }
+
+                                    <!-- Pricing Block -->
+                               @*     <div class="pricing-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
+                                        <div class="inner-box">
+                                            <div class="icon-box">
+                                                <div class="icon-outer">
+                                                  <i class="fa fa-diamond" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                            <div class="price-box">
+                                                <div class="title">6 Months</div>
+                                                <h4 class="price">$60.99</h4>
+                                            </div>
+                                            <ul class="features">
+                                                <li class="true">Conference plans</li>
+                                                <li class="true">Certificate</li>
+                                                <li class="false">Free Contacts</li>
+                                            </ul>
+                                            <div class="btn-box">
+                                                <a target="_blank" href="javascript:void(0)" class="theme-btn">Edit Plan</a>
+                                            </div>
+                                        </div>
+                                    </div>*@
+
+                                    <!-- Pricing Block -->
+                                @*    <div class="pricing-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="800ms">
+                                        <div class="inner-box">
+                                            <div class="icon-box">
+                                                <div class="icon-outer">
+                                                  <i class="fa fa-rocket" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                            <div class="price-box">
+                                                <div class="title">1 Year</div>
+                                                <h4 class="price">$123.00</h4>
+                                            </div>
+                                            <ul class="features">
+                                                <li class="true">Certificate</li>
+                                                <li class="true">Easy Access</li>
+                                                <li class="true">Free Contacts</li>
+                                            </ul>
+                                            <div class="btn-box">
+                                                <a target="_blank" href="javascript:void(0)" class="theme-btn">Edit Plan</a>
+                                            </div>
+                                        </div>
+                                    </div>*@
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+<script>
+    //month and dollor value apply Only Allow Numbers in a Text Box
+
+    $(document).ready(function () {
+        $('.price input, .title input').keypress(function (e) {
+        var charCode = (e.which) ? e.which : event.keyCode
+        if (String.fromCharCode(charCode).match(/[^0-9]/g))
+            return false;
+        });
+    });
+</script>
+
+
+
+    <script src="dist/js/popper.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="~/custom_js/customer_plan.js"></script>
+

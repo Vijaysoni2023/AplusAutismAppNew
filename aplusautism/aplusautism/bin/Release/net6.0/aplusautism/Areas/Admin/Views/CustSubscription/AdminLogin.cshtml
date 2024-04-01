@@ -1,0 +1,182 @@
+﻿
+
+@{
+    ViewData["Title"] = "AdminDashboard";
+    Layout = null;
+}
+
+<head>
+    <link rel="stylesheet" href="~/custome_containt/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/custome_containt/css/style.css" />
+    <link href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css rel=stylesheet>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+  <body>
+  <div id="app">
+      <nav id="header" class="navbar navbar-expand navbar-dark">
+        <span id="navbar-logo">
+           @*<h5 class="text-bold text-white m-0">Welcome Patrow</h5>*@
+        </span>
+        <span id="bars" class="d-inline-block align-middle mx-2 cursor-pointer">
+          <i class="fa fa-bars font-size-25 text-white"></i>
+        </span>
+        <ul id="navbar-user" class="ml-2 ms-auto align-items-center navbar-nav">
+                <li style="text-transform:uppercase;">September 09 2022</li>
+        </ul>
+        <ul id="navbar-items-right" class="ml-auto align-items-center navbar-nav">
+          <li class="btn-group nav-item">
+            <a aria-haspopup="true" href="#" class="py-0 nav-link" aria-expanded="false">
+              <span class="user-avatar" style="line-height: 32px; height: 32px; width: 32px; background-color: yellowgreen;">K</span>
+              <span class="d-none d-md-inline-block align-middle text-white">Welcome @Model.UserFullName</span>
+            </a>
+       
+            <div tabindex="-1" role="menu" aria-hidden="false" class="dropdown-menu dropdown-menu-right">
+              <div tabindex="0" role="menuitem" class="dropdown-item">
+                <a href="signin.html" type="button" class="btn btn-link btn-sm">
+                  <i class="fa fa-sign-out mr-2"></i>Sign Out</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div id="main">
+          <div id="sidebar">
+            <section class="sidebar-section pt-3">
+               <a href="admin-dashboard.html">
+                <i class="fa fa-list-alt fa-fw sidebar-link-icon"></i>
+                <span class="sidebar-link-text">Admin Dashboard</span>
+              </a>
+              <a href="changepasswordform.html">
+                <i class="fa fa-key fa-fw sidebar-link-icon"></i>
+                <span class="sidebar-link-text">Change Password</span>
+              </a>
+               <a href="payment-details.html">
+                <i class="fa fa-credit-card-alt sidebar-link-icon" aria-hidden="true"></i>
+                <span class="sidebar-link-text">Payment Details</span>
+              </a>
+              <a href="client-details.html">
+                <i class="fa fa-users fa-fw sidebar-link-icon"></i>
+                <span class="sidebar-link-text">Client Details</span>
+              </a>
+               <a href="client-profile.html">
+                <i class="fa fa-user sidebar-link-icon" aria-hidden="true"></i>
+                <span class="sidebar-link-text">Client Profile</span>
+              </a>
+              <a href="/Admin/CustSubscription/LessonDetail">
+                <i class="fa fa-file-video-o fa-fw sidebar-link-icon"></i>
+                <span class="sidebar-link-text">Lessons Details</span>
+              </a>
+              <a href="plans.html">
+                <i class="fa fa-list-alt fa-fw sidebar-link-icon"></i>
+                <span class="sidebar-link-text">Manage Plans</span>
+              </a>
+            </section>
+          </div>
+          <div class="main-content container-fluid">
+            <div class="lessons" style="pointer-events: all;">
+              <div class="mb-2 align-items-center row mx-0">
+                <div class="col-md-6">
+                  <div class="row">
+                    <h4 class="text-muted text-bold">Admin Dashboard</h4>
+                  </div>
+                </div>
+              </div>
+              <div id="admindashboard" class="row">
+                  <div class="col-md-6 mb-4 mb-md-0">
+                    <div class="card">
+                        <div class="card-header">
+                            <h6 class="mb-0"><b>Payments</b></h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col table-responsive">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                              <th>Sum of Amount</th>
+                                              <th>USD</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Received </td>
+                                                <td><a href="payment-details.html">$1,000</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>  
+                  <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h6 class="mb-0"><b>Clients</b></h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col table-responsive">
+                                    <table class="table table-bordered">
+                                        <tbody>
+                                            <tr>
+                                              <th>Active</th>
+                                              <td><a href="client-details.html">250</a></td>
+                                            </tr>
+                                             <tr>
+                                              <th>InActive</th>
+                                              <td><a href="client-details.html">50</a></td>
+                                            </tr>
+                                             <tr>
+                                              <th>Trial</th>
+                                              <td><a href="client-details.html">350</a></td>
+                                            </tr>
+                                            <tr>
+                                              <th>Trial ended not Subscribed</th>
+                                              <td><a href="client-details.html">10</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>  
+              </div>
+              
+          </div>
+        </div>
+    </div>
+  </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+ 
+   <script src="~/custome_containt/js/jquery-3.3.1.slim.min.js" asp-append-version="true"></script>
+
+
+      <script type="text/javascript">
+      
+      $('#navbar-items-right li').click(function() {
+          $(this).toggleClass("show");
+          $('.dropdown-menu.dropdown-menu-right').toggleClass('show');
+
+      }); 
+
+      $("#bars").click(function(){
+          $('#sidebar').toggleClass("small");
+          $("#main").css('margin-left', '70px');
+           // $("#navbar-logo").css('margin-left', '70px');
+          if(!$('#sidebar').hasClass('small')){
+             $("#main").css('margin-left', '200px');
+               // $("#navbar-logo").css('margin-left', '200px');
+            }
+      });
+
+    </script>
+
+   <script src="~/custome_containt/js/popper.min.js" asp-append-version="true"></script>
+    <script src="~/custome_containt/js/bootstrap.min.js" asp-append-version="true"></script>
+  </body>

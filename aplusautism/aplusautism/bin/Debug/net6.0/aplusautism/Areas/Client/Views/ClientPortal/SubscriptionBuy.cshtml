@@ -1,0 +1,185 @@
+﻿@model IEnumerable<aplusautism.Data.Models.SubscriptionSetup>
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#clientdetails').dataTable({
+            "pagingType": "full_numbers",
+            "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
+        });
+    });
+</script>
+
+<script>
+
+    $(document).ready(function() {
+        debugger;
+        var viewbagValue = '@ViewBag.DisableButton';
+        if (viewbagValue == "1") {
+            $('#ButtonDisplay').attr('disabled', true);
+        } else {
+            $('#ButtonDisplay').attr('disabled', false);
+        }
+    });
+
+    function CheckPage(SubscriptionSetupID, Amount) {
+        debugger;
+        const myArray = SubscriptionSetupID.split(",");
+        var Subid = myArray[0];
+        var amt = myArray[1];
+        var viewbagValue = '@ViewBag.DisableButton';
+        if (viewbagValue == "1") {
+           swal("Sorry", "You have already an active Subscription plan!", "error");
+          
+        } else {
+            window.location.href = "/Client/ClientPortal/Payment?SubscriptionSetupID=" + Subid + "&Amount=" + amt;
+        }
+
+    }
+</script>
+
+<div class="main-content container-fluid">
+    <div class="subscriptionplan" style="pointer-events: all;">
+        <div class="card">
+            <div class="card-body">
+                <section class="pricing-section">
+
+                    @if (@ViewBag.LastestSubscriptionlist != null)
+                    {
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="sec-title text-center col-12">
+                                    <span class="title">Get plan</span>
+                                    <h2 class="mb-0 text-muted text-bold">Subscription Plan List</h2>
+                                </div>
+                                <div class="table-responsive">
+                                    <table id="clientdetails" class="table-bordered table table-sm">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    Subscription Plan<span class="sort-direction"></span>
+                                                </th>
+                                                <th>
+                                                    Start Date<span class="sort-direction"></span>
+                                                </th>
+
+                                                <th>
+                                                    End Date <span class="sort-direction"></span>
+                                                </th>
+                                                <th>Price</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="myTable"> 
+                                            @if (@ViewBag.LastestSubscriptionlist != null)
+                                            {
+                                                @foreach (var latestSubscription in (List<aplusautism.Bal.DTO.SubscriptionDTO>)ViewBag.LastestSubscriptionlist)
+                                                {
+                                                    <tr>
+                                                        <td>@latestSubscription.SchemeName</td>
+                                                        <td>@latestSubscription.StartDateFormat</td>
+                                                        <td>@latestSubscription.EndDateFormat</td>                                                    
+                                                         <td>@String.Format("{0:C}", @latestSubscription.Price)</td> 
+                                                        
+                                                        @if (@latestSubscription.IsActive == true)
+                                                        {
+                                                            <td style="color:green;">Active</td>
+                                                        }
+                                                        else
+                                                        {
+                                                            <td style="color:red;">In Active</td>
+                                                        }
+
+                                                    </tr>
+
+                                                }
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    <div class="row">
+                        <div class="sec-title text-center col-12">
+                            <h2 class="mb-0 text-muted text-bold">Choose Subscription Plan</h2>
+                        </div>
+                        <div class="pricing col-12">
+                            <div class="row">
+                                <!-- Pricing Block -->
+                                @foreach (var subscriptiondata in Model.ToList())
+                                {
+                                    <div class="col-md-6 col-lg-4 col-sm-12">
+                                        <div class="row mb-4">
+                                            <div class="col-md-12 col-12 wow fadeInUp">
+                                                <div class="plan">
+                                                    <div class="price-box  @subscriptiondata.SchemeName" id="originplan_@subscriptiondata.SubscriptionSetupID">
+                                                      
+                                                        <a id="ButtonDisplay" style="padding:0;" href="#" class="btn w-100" onclick="CheckPage('@subscriptiondata.SubscriptionSetupID,@subscriptiondata.Price');">
+
+                                                       
+                                                        <div class="planblockbg">
+                                                            <img class="brozne" src="@subscriptiondata.SubscriptionImage">
+                                                        </div>
+                                                        <div class="planblockcontent">
+                                                          @*  <h2>@subscriptiondata.SchemeName</h2>*@
+                                                            <div class="price">
+                                                                <ul>
+                                                                <li>@*
+                                                                    <label id="originplanprcie_@subscriptiondata.SubscriptionSetupID">@String.Format("{0:C}", @subscriptiondata.Price) </label>*@
+                                                                   @* <span class="slash"> <i class="fas fa-slash"></i></span>*@
+                                                                </li>
+                                                                <li>
+                                                                       
+                                                                </li>
+                                                             @*   @if (subscriptiondata.DurationType == "M")
+                                                                {
+                                                                        <li class="title"><label id="originplanduration_@subscriptiondata.SubscriptionSetupID">@subscriptiondata.Duration Months</label></li>
+                                                                }
+
+                                                                @if(subscriptiondata.DurationType == "MT")
+                                                                {
+                                                                    <li class="title"><label id="originplanduration_@subscriptiondata.SubscriptionSetupID">@subscriptiondata.Duration Month</label></li>
+                                                                }*@
+
+                                                                @if (subscriptiondata.DurationType == "Y")
+                                                                {
+                                                                    <li class="title"><label id="originplanduration_@subscriptiondata.SubscriptionSetupID">@subscriptiondata.Duration year</label></li>
+                                                                }
+                                                                </ul>
+                                                            </div>
+                                                         @*  <div class="saveplan">
+                                                               <b>Save</b>
+                                                                <span class="dollorsign">$100.00</span>
+                                                            </div>*@
+                                                        </div>
+
+                                                         </a>
+                                                    </div>
+                                                    <div id="originplanDivbutton_@subscriptiondata.SubscriptionSetupID">
+
+                                                       @* <a id="ButtonDisplay" href="#" class="py-3 btn btn-warning w-100" onclick="CheckPage('@subscriptiondata.SubscriptionSetupID,@subscriptiondata.Price');">Buy Plan</a>*@
+
+                                                        @*<a id="ButtonDisplay"  href="~/Client/ClientPortal/Payment?SubscriptionSetupID=@subscriptiondata.SubscriptionSetupID&Amount= @subscriptiondata.Price" class="py-3 btn btn-warning w-100">Buy Plan</a>*@
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                }
+
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script>
+$(".sidebar-section #lm_subscriptionBuy").addClass('active');
+</script>

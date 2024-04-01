@@ -1,0 +1,102 @@
+D:\Mahesh sir project\aplusautism\aplusautism\aplusautism.Repository\bin\Debug\net6.0\aplusautism.Repository.deps.json
+D:\Mahesh sir project\aplusautism\aplusautism\aplusautism.Repository\bin\Debug\net6.0\aplusautism.Repository.runtimeconfig.json
+D:\Mahesh sir project\aplusautism\aplusautism\aplusautism.Repository\bin\Debug\net6.0\aplusautism.Repository.dll
+D:\Mahesh sir project\aplusautism\aplusautism\aplusautism.Repository\bin\Debug\net6.0\aplusautism.Repository.pdb
+D:\Mahesh sir project\aplusautism\aplusautism\aplusautism.Repository\bin\Debug\net6.0\aplusautism.Data.dll
+D:\Mahesh sir project\aplusautism\aplusautism\aplusautism.Repository\bin\Debug\net6.0\aplusautism.Data.pdb
+D:\Mahesh sir project\aplusautism\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.csproj.AssemblyReference.cache
+D:\Mahesh sir project\aplusautism\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mahesh sir project\aplusautism\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.AssemblyInfoInputs.cache
+D:\Mahesh sir project\aplusautism\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.AssemblyInfo.cs
+D:\Mahesh sir project\aplusautism\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.csproj.CoreCompileInputs.cache
+D:\Mahesh sir project\aplusautism\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.csproj.CopyComplete
+D:\Mahesh sir project\aplusautism\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.dll
+D:\Mahesh sir project\aplusautism\aplusautism\aplusautism.Repository\obj\Debug\net6.0\refint\aplusautism.Repository.dll
+D:\Mahesh sir project\aplusautism\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.pdb
+D:\Mahesh sir project\aplusautism\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.genruntimeconfig.cache
+D:\Mahesh sir project\aplusautism\aplusautism\aplusautism.Repository\obj\Debug\net6.0\ref\aplusautism.Repository.dll
+D:\03A_plus\Code\aplusautism\aplusautism\aplusautism.Repository\bin\Debug\net6.0\aplusautism.Repository.deps.json
+D:\03A_plus\Code\aplusautism\aplusautism\aplusautism.Repository\bin\Debug\net6.0\aplusautism.Repository.runtimeconfig.json
+D:\03A_plus\Code\aplusautism\aplusautism\aplusautism.Repository\bin\Debug\net6.0\aplusautism.Repository.dll
+D:\03A_plus\Code\aplusautism\aplusautism\aplusautism.Repository\bin\Debug\net6.0\aplusautism.Repository.pdb
+D:\03A_plus\Code\aplusautism\aplusautism\aplusautism.Repository\bin\Debug\net6.0\aplusautism.Data.dll
+D:\03A_plus\Code\aplusautism\aplusautism\aplusautism.Repository\bin\Debug\net6.0\aplusautism.Data.pdb
+D:\03A_plus\Code\aplusautism\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.csproj.AssemblyReference.cache
+D:\03A_plus\Code\aplusautism\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\03A_plus\Code\aplusautism\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.AssemblyInfoInputs.cache
+D:\03A_plus\Code\aplusautism\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.AssemblyInfo.cs
+D:\03A_plus\Code\aplusautism\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.csproj.CoreCompileInputs.cache
+D:\03A_plus\Code\aplusautism\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.csproj.CopyComplete
+D:\03A_plus\Code\aplusautism\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.dll
+D:\03A_plus\Code\aplusautism\aplusautism\aplusautism.Repository\obj\Debug\net6.0\refint\aplusautism.Repository.dll
+D:\03A_plus\Code\aplusautism\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.pdb
+D:\03A_plus\Code\aplusautism\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.genruntimeconfig.cache
+D:\03A_plus\Code\aplusautism\aplusautism\aplusautism.Repository\obj\Debug\net6.0\ref\aplusautism.Repository.dll
+D:\Mahesh sir project\Aplus\aplus\aplusautism\aplusautism.Repository\bin\Debug\net6.0\aplusautism.Repository.deps.json
+D:\Mahesh sir project\Aplus\aplus\aplusautism\aplusautism.Repository\bin\Debug\net6.0\aplusautism.Repository.runtimeconfig.json
+D:\Mahesh sir project\Aplus\aplus\aplusautism\aplusautism.Repository\bin\Debug\net6.0\aplusautism.Repository.dll
+D:\Mahesh sir project\Aplus\aplus\aplusautism\aplusautism.Repository\bin\Debug\net6.0\aplusautism.Repository.pdb
+D:\Mahesh sir project\Aplus\aplus\aplusautism\aplusautism.Repository\bin\Debug\net6.0\aplusautism.Data.dll
+D:\Mahesh sir project\Aplus\aplus\aplusautism\aplusautism.Repository\bin\Debug\net6.0\aplusautism.Data.pdb
+D:\Mahesh sir project\Aplus\aplus\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.csproj.AssemblyReference.cache
+D:\Mahesh sir project\Aplus\aplus\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mahesh sir project\Aplus\aplus\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.AssemblyInfoInputs.cache
+D:\Mahesh sir project\Aplus\aplus\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.AssemblyInfo.cs
+D:\Mahesh sir project\Aplus\aplus\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.csproj.CoreCompileInputs.cache
+D:\Mahesh sir project\Aplus\aplus\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.csproj.CopyComplete
+D:\Mahesh sir project\Aplus\aplus\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.dll
+D:\Mahesh sir project\Aplus\aplus\aplusautism\aplusautism.Repository\obj\Debug\net6.0\refint\aplusautism.Repository.dll
+D:\Mahesh sir project\Aplus\aplus\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.pdb
+D:\Mahesh sir project\Aplus\aplus\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.genruntimeconfig.cache
+D:\Mahesh sir project\Aplus\aplus\aplusautism\aplusautism.Repository\obj\Debug\net6.0\ref\aplusautism.Repository.dll
+C:\AplusProject\aplus\aplusautism\aplusautism.Repository\bin\Debug\net6.0\aplusautism.Repository.deps.json
+C:\AplusProject\aplus\aplusautism\aplusautism.Repository\bin\Debug\net6.0\aplusautism.Repository.runtimeconfig.json
+C:\AplusProject\aplus\aplusautism\aplusautism.Repository\bin\Debug\net6.0\aplusautism.Repository.dll
+C:\AplusProject\aplus\aplusautism\aplusautism.Repository\bin\Debug\net6.0\aplusautism.Repository.pdb
+C:\AplusProject\aplus\aplusautism\aplusautism.Repository\bin\Debug\net6.0\aplusautism.Data.dll
+C:\AplusProject\aplus\aplusautism\aplusautism.Repository\bin\Debug\net6.0\aplusautism.Data.pdb
+C:\AplusProject\aplus\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.csproj.AssemblyReference.cache
+C:\AplusProject\aplus\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\AplusProject\aplus\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.AssemblyInfoInputs.cache
+C:\AplusProject\aplus\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.AssemblyInfo.cs
+C:\AplusProject\aplus\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.csproj.CoreCompileInputs.cache
+C:\AplusProject\aplus\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.csproj.CopyComplete
+C:\AplusProject\aplus\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.dll
+C:\AplusProject\aplus\aplusautism\aplusautism.Repository\obj\Debug\net6.0\refint\aplusautism.Repository.dll
+C:\AplusProject\aplus\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.pdb
+C:\AplusProject\aplus\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.genruntimeconfig.cache
+C:\AplusProject\aplus\aplusautism\aplusautism.Repository\obj\Debug\net6.0\ref\aplusautism.Repository.dll
+E:\GitAPlush\aplus\aplusautism\aplusautism.Repository\bin\Debug\net6.0\aplusautism.Repository.deps.json
+E:\GitAPlush\aplus\aplusautism\aplusautism.Repository\bin\Debug\net6.0\aplusautism.Repository.runtimeconfig.json
+E:\GitAPlush\aplus\aplusautism\aplusautism.Repository\bin\Debug\net6.0\aplusautism.Repository.dll
+E:\GitAPlush\aplus\aplusautism\aplusautism.Repository\bin\Debug\net6.0\aplusautism.Repository.pdb
+E:\GitAPlush\aplus\aplusautism\aplusautism.Repository\bin\Debug\net6.0\aplusautism.Data.dll
+E:\GitAPlush\aplus\aplusautism\aplusautism.Repository\bin\Debug\net6.0\aplusautism.Data.pdb
+E:\GitAPlush\aplus\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.csproj.AssemblyReference.cache
+E:\GitAPlush\aplus\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.GeneratedMSBuildEditorConfig.editorconfig
+E:\GitAPlush\aplus\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.AssemblyInfoInputs.cache
+E:\GitAPlush\aplus\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.AssemblyInfo.cs
+E:\GitAPlush\aplus\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.csproj.CoreCompileInputs.cache
+E:\GitAPlush\aplus\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.csproj.CopyComplete
+E:\GitAPlush\aplus\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.dll
+E:\GitAPlush\aplus\aplusautism\aplusautism.Repository\obj\Debug\net6.0\refint\aplusautism.Repository.dll
+E:\GitAPlush\aplus\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.pdb
+E:\GitAPlush\aplus\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.genruntimeconfig.cache
+E:\GitAPlush\aplus\aplusautism\aplusautism.Repository\obj\Debug\net6.0\ref\aplusautism.Repository.dll
+D:\AplusLatestCode\aplus\aplusautism\aplusautism.Repository\bin\Debug\net6.0\aplusautism.Repository.deps.json
+D:\AplusLatestCode\aplus\aplusautism\aplusautism.Repository\bin\Debug\net6.0\aplusautism.Repository.runtimeconfig.json
+D:\AplusLatestCode\aplus\aplusautism\aplusautism.Repository\bin\Debug\net6.0\aplusautism.Repository.dll
+D:\AplusLatestCode\aplus\aplusautism\aplusautism.Repository\bin\Debug\net6.0\aplusautism.Repository.pdb
+D:\AplusLatestCode\aplus\aplusautism\aplusautism.Repository\bin\Debug\net6.0\aplusautism.Data.dll
+D:\AplusLatestCode\aplus\aplusautism\aplusautism.Repository\bin\Debug\net6.0\aplusautism.Data.pdb
+D:\AplusLatestCode\aplus\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.csproj.AssemblyReference.cache
+D:\AplusLatestCode\aplus\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\AplusLatestCode\aplus\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.AssemblyInfoInputs.cache
+D:\AplusLatestCode\aplus\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.AssemblyInfo.cs
+D:\AplusLatestCode\aplus\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.csproj.CoreCompileInputs.cache
+D:\AplusLatestCode\aplus\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.csproj.CopyComplete
+D:\AplusLatestCode\aplus\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.dll
+D:\AplusLatestCode\aplus\aplusautism\aplusautism.Repository\obj\Debug\net6.0\refint\aplusautism.Repository.dll
+D:\AplusLatestCode\aplus\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.pdb
+D:\AplusLatestCode\aplus\aplusautism\aplusautism.Repository\obj\Debug\net6.0\aplusautism.Repository.genruntimeconfig.cache
+D:\AplusLatestCode\aplus\aplusautism\aplusautism.Repository\obj\Debug\net6.0\ref\aplusautism.Repository.dll

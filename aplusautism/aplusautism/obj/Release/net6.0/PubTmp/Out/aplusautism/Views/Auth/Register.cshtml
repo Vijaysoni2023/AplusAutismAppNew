@@ -1,0 +1,489 @@
+﻿@model aplusautism.Bal.DTO.RegisterUserDTO
+@{
+    ViewData["Title"] = "SignIn";
+    Layout = null;
+}
+
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="~/custome_containt/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/custome_containt/css/style.css" />
+    <link rel="stylesheet" href="~/custome_containt/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" />
+        @*favicon icon*@
+    <link rel="shortcut icon" type="image/png" href="~/custome_containt/images/favicon.png" alt="favicon" />
+    <style>
+#signupform .form-group.display-none {
+    display: none;
+}
+.auth-inner {
+    margin: 50px 0 0;
+}
+
+.sweet-alert h2 {
+    margin: 25px 0 18px;
+}
+
+body.stop-scrolling .sweet-alert.showSweetAlert.visible  {
+    margin-top: inherit !important;
+}
+body.stop-scrolling .sweet-alert.showSweetAlert.visible {
+    top: 25%;
+}
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div class="container-fluid auth-wrapper">
+            <div class="row auth-row">
+                <div class="col-lg-6 col-xl-6 col-sm-12">
+                    <div class="row">
+                        <div class="auth-header col-12">
+                            <div class="inner-rw row align-items-center justify-content-center ">
+                                <a class="logo btn" href="#">
+                                    <img src="~/custome_containt/images/logo.png" alt="Autism Logo">
+                                </a>
+                                <div class="head-link">
+                                    <a asp-area="" asp-controller="Auth" asp-action="SignIn" class="btn">Sign In</a><span>|</span>
+                                    <a asp-area="" asp-controller="Auth" asp-action="Register" class="btn">Sign Up</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="auth-inner col-12">
+                            <div id="signup" class="auth-form">
+                                <div class="head">
+                                    <h2>Sign Up</h2>
+                                    <h3>Fill the below information to create an account</h3>
+                                </div>
+                                <form id="signupform" asp-area="Admin" asp-action="RegisterUser" asp-controller="CustSubscription" method="post" asp class="col-12">
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <label for="FirstName">
+                                                Name
+                                                <span class="label-danger"> *</span>
+                                            </label>
+                                            <input asp-for="FirstName" type="text" class="form-control text-capitalize" id="FirstName" name="FirstName">
+                                            <span class="icon">
+                                                <i class='bx bxs-user'></i>
+                                            </span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="LastName">
+                                                Last Name
+                                                <span class="label-danger"> *</span>
+                                            </label>
+                                            <input asp-for="LastName" type="text" class="form-control text-capitalize" id="LastName" name="LastName">
+                                            <span class="icon">
+                                                <i class='bx bxs-user'></i>
+                                            </span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="Email">
+                                                Email Address
+                                                <span class="label-danger"> *</span>
+                                            </label>
+                                            <input asp-for="Email" type="email"
+                                                   class="form-control" id="Email" name="Email" onblur="myFunction()"
+                                                   pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$" autocomplete="off">
+                                            <span class="icon">
+                                                <i class='bx bx-envelope'></i>
+                                            </span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="Password">
+                                                Password
+                                                <span class="label-danger">*</span>
+                                            </label>
+                                            <input asp-for="Password" type="password" class="form-control" id="Password" name="Password">
+                                            <span class="icon">
+                                                <i id="eye" class="fa fa-eye-slash"></i>
+                                            </span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="ConfirmPassword">
+                                                Repeat Password
+                                                <span class="label-danger">*</span>
+                                            </label>
+                                            <input asp-for="ConfirmPassword" type="password" class="form-control" id="ConfirmPassword" name="ConfirmPassword">
+                                            <span class="icon">
+                                                <i id="confirm-eye" class="fa fa-eye-slash"></i>
+                                            </span>
+                                        </div>
+
+                                        <div class="form-group display-none">
+                                            <label for="CurrentAddress">
+                                                Address1
+                                                <span class="label-danger">*</span>
+                                            </label>
+                                            <input asp-for="CurrentAddress" type="text" class="form-control" id="CurrentAddress" name="CurrentAddress">
+                                        </div>
+                                        <div class="form-group display-none">
+                                            <label for="PermanentAddress">
+                                                Address2
+                                                <span class="label-danger">*</span>
+                                            </label>
+                                            <input asp-for="PermanentAddress" type="text" class="form-control" id="PermanentAddress" name="PermanentAddress">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="Country">
+                                                Country
+                                                <span class="label-danger">*</span>
+                                            </label>
+                                            <select asp-for="Country" placeholder="Country" class="form-control" id="Country" name="Country">
+                                                <option value="">--Choose Country--</option>
+                                                @foreach (var countrydata in Model.Countrieslist)
+                                                {
+                                                    <option value="@countrydata.CountryId">@countrydata.Name</option>
+                                                }
+
+
+
+                                            </select>
+                                        </div>
+                                        <div class="form-group display-none">
+                                            <label for="State">
+                                                State
+                                                <span class="label-danger">*</span>
+                                            </label>
+                                            <select asp-for="State" placeholder="State" class="form-control" id="State" name="State">
+                                                <option value="">--Choose State--</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group display-none">
+                                            <label for="City">
+                                                City
+                                                <span class="label-danger">*</span>
+                                            </label>
+                                            <select asp-for="City" placeholder="City" class="form-control" id="City" name="City">
+                                                <option value="">--Choose City--</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group display-none">
+                                            <label for="PostalCode">
+                                                Postal Code
+                                                <span class="label-danger">*</span>
+                                            </label>
+                                            <input asp-for="PostalCode" type="text" class="form-control" id="PostalCode" maxlength="10" name="PostalCode">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="Languages">
+                                                Languages
+                                                <span class="label-danger">*</span>
+                                            </label>
+                                        </div>
+                                        <div id="Languages">
+                                            @foreach (var language in Model.LanguagesList)
+                                            {
+
+                                                <div class="form-check form-check-inline pb-2">
+                                                    <span>
+                                                        <label class="radio" for="radio0">
+                                                            <input asp-for="Languages" id="radio0" type="radio" name="Languages" value="@language.GlobalCodeValue">@language.GlobalCodeName
+                                                        </label>
+                                                    </span>
+                                                </div>
+
+                                            }
+                                        </div>
+
+                                        <div class="form-group remember-txt" style="margin-bottom:12px;">
+                                            <div class="row justify-content-between pl-3 pr-4" id="remember-filed">
+                                                <div class="d-flex">
+                                                    <label class="col-auto pr-1">
+                                                        <span class="checkbox" for="check">
+                                                            @*   <input id="checkTerm" type="checkbox">*@
+                                                            <input asp-for="checkTerm" type="checkbox" class="form-control" id="checkTerm" name="checkTerm" required>
+                                                            <span class="checkmark"></span>
+                                                        </span>
+                                                    </label>
+
+                                                    <span>
+                                                        I accept the  A+  Terms Of Enrollment & Privacy Policy.
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group submit-btn mt-3">
+                                            <button type="submit" class="btn btn-primary">Sign Up</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-6 col-sm-12 d-xl-block d-lg-block d-none">
+                    <div class="row auth-form-pic signup_img">
+                        <img class="img-fluid" src="~/custome_containt/images/signup-bg.png" alt="SignUp">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="~/custome_containt/js/jquery-3.3.1.slim.min.js" asp-append-version="true"></script>
+    <script src="~/custome_containt/js/popper.min.js" asp-append-version="true"></script>
+    <script src="~/custome_containt/js/bootstrap.min.js" asp-append-version="true"></script>
+
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    @*    Jquery validation code*@
+
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            debugger;
+
+
+
+            var viewbagdata = '@ViewBag.UserExsit';
+            // alert(viewbagdata)
+
+            if (viewbagdata == "True") {
+                //swal("", "Already user has been registered with this email!", "success");
+                //swal("Thank you,", "You already have account with us.")
+                swal("Sorry", "This Email is already Registered.")
+                //var options = {
+                //                    title: ' ',
+                //                    text: '<img  src="../custome_containt/images/already_regitered.jpg" width="100%" height="100%">',
+                //                    width: '600px',
+                //                    height:'380px',
+                //                    html: true
+                //                };
+                //                 swal(options);
+            }
+
+
+            $('#signupform').validate({
+                rules: {
+                    FirstName: 'required',
+                    LastName: 'required',
+                    Email: 'required',
+                    Password: 'required',
+                    ConfirmPassword: 'required',
+                    ContactNumber: 'required',
+                  //  CurrentAddress: 'required',
+                  //  PermanentAddress: 'required',
+                    Country: 'required',
+                   // PostalCode: 'required',
+                    Languages: 'required',
+                    checkTerm: 'required',
+
+                    FirstName: {
+                        required: true,
+                        minlength: 3,
+                        maxlength: 15
+                    },
+
+                    LastName: {
+                        required: true,
+                        minlength: 3,
+                        maxlength: 15
+                    },
+
+                    Email: {
+                        required: true,
+                        email: true,
+                        //regex: /^\b[A-Z0-9._%+-]+@@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i
+                    },
+
+                    Password: {
+                        required: true,
+                        minlength: 5,
+                        maxlength: 15
+                    },
+
+                    ConfirmPassword:
+                    {
+                        required: true,
+                        minlength: 5,
+                        maxlength: 15,
+                        equalTo: '#Password'
+                    },
+                    ContactNumber: {
+                        required: false,
+                        minlength: 9,
+                        maxlength: 10,
+                        number: true
+                    },
+                    
+                    //CurrentAddress:
+                    //{
+                    //    required: true,
+                    //    rangelength: [5, 250]
+                    //},
+                    //PermanentAddress:
+                    //{
+                    //    required: true,
+                    //    rangelength: [5, 250]
+                    //},
+                    Country:
+                    {
+                        required: true
+                    },
+                    //PostalCode:
+                    //{
+                    //    required: true
+                    //},
+                    Languages:
+                    {
+                        required: true
+                    },
+
+                    'radio[]':
+                    {
+                        required: true,
+                        minlength: 1
+
+                    }
+                },
+                messages: {
+                    FirstName: {
+                        required: 'Please enter username',
+                        minlength: 'First must be at least 3 characters long',
+                        maxlength: 'First must be at least 3 characters long'
+                    },
+                    LastName: {
+                        required: 'Please enter username',
+                        minlength: 'Last Name must be at least 3 characters long'
+                    },
+                    Email: {
+                        required: 'Please enter email',
+                        email: 'Your email address must be in the format of name@domain.com',
+                        digits: 'Please enter only digits.'
+                    },
+                    Password: {
+                        required: 'Please provide a password',
+                        minlength: 'Your password must be at least 5 characters long'
+                    },
+                    ConfirmPassword:
+                    {
+                        required: 'Please provide a password',
+                        minlength: 'Your password must be at least 5 characters long',
+                        equalTo: 'Please enter the same password as above'
+                    },
+                    ContactNumber:
+                    {
+                        required: 'Please enter valid contact number',
+                        maxlength: 'Your ContactNumber must be of 10 digits ',
+                        number: 'Number only contains digits'
+                    },
+                    //CurrentAddress:
+                    //{
+                    //    required: 'Address1 field is required'
+                    //},
+                    //PermanentAddress:
+                    //{
+                    //    required: 'Address2 field is required'
+                    //},
+                    Country:
+                    {
+                        required: 'Please select category',
+                        digits: "Please enter only digits.",
+                    },
+                    Languages:
+                    {
+                        required: 'Please select one Language'
+                    },
+                    'radio[]':
+                    {
+                        minlength: "Please select at least {0} options"
+                    },
+                    errorPlacement: function (error, element) {
+                        if (element.is(":checkbox")) {
+                            error.appendTo(element.parents('.container'));
+                        }
+                        else { // This is the default behavior
+                            error.insertAfter(element);
+                        }
+                    }
+
+                },
+
+                highlight: function (element) {
+                    $(element).closest('.form-group').addClass('has-error');
+                },
+                unhighlight: function (element) {
+                    $(element).closest('.form-group').removeClass('has-error');
+                },
+                errorElement: 'span',
+                errorClass: 'help-block',
+                errorPlacement: function (error, element) {
+                    if (element.parent('.input-group').length) {
+                        error.insertAfter(element.parent());
+                    } else {
+                        error.insertAfter(element);
+                    }
+                },
+
+                //submitHandler: function(form) {
+                //    alert("Form submitted successfully")
+                //    form.submit();
+                //}
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+
+        //password input type change
+
+        $(function () {
+            $('#eye').click(function () {
+
+                if ($(this).hasClass('fa-eye-slash')) {
+
+                    $(this).removeClass('fa-eye-slash');
+
+                    $(this).addClass('fa-eye');
+
+                    $('#Password').attr('type', 'text');
+
+                } else {
+
+                    $(this).removeClass('fa-eye');
+
+                    $(this).addClass('fa-eye-slash');
+
+                    $('#Password').attr('type', 'password');
+                }
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $('#confirm-eye').click(function () {
+
+                if ($(this).hasClass('fa-eye-slash')) {
+
+                    $(this).removeClass('fa-eye-slash');
+
+                    $(this).addClass('fa-eye');
+
+                    $('#ConfirmPassword').attr('type', 'text');
+
+                } else {
+
+                    $(this).removeClass('fa-eye');
+
+                    $(this).addClass('fa-eye-slash');
+
+                    $('#ConfirmPassword').attr('type', 'password');
+                }
+            });
+        });
+    </script>
+    <script src="dist/js/popper.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+
+    <script src="~/custom_js/Register.js"></script>
+</body>
+</html>

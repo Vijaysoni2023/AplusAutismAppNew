@@ -1,0 +1,203 @@
+﻿@model aplusautism.Bal.DTO.LoginDTO
+
+@{
+    ViewData["Title"] = "SignIn";
+    Layout = null;
+}
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="~/custome_containt/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/custome_containt/css/style.css" />
+        <link rel="stylesheet" href="~/custome_containt/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" />
+</head>
+<body>
+<div id="app">
+    <div class="container-fluid auth-wrapper">
+        <div class="row auth-row">
+            <div class="col-lg-6 col-xl-6 col-sm-12">
+               <div class="row">
+                  <div class="auth-header col-12">
+                      <div class="inner-rw row align-items-center justify-content-center ">
+                          <a class="logo btn" href="#">
+                              <img src="~/custome_containt/images/logo.png" alt="Autism Logo">
+                          </a>
+                          <div class="head-link">
+                            <a  asp-area="" asp-controller="Auth" asp-action="SignIn"  class="btn">Sign In</a>
+                            <span>|</span>
+                            <a  asp-area="" asp-controller="Auth" asp-action="Register" class="btn">Sign Up</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="auth-inner col-12">
+                     <div class="auth-form">
+                        <div class="head">
+                          <h2>Sign In</h2>
+                          <h3>Sign in to continue in our website</h3>
+                        </div>
+                         <p class="bg-danger text-white">@ViewBag.Error</p>
+                         <form id="signin" asp-action="SignIn" asp-controller="Auth" asp class="col-12">
+
+                          <div class="row">
+                             <div class="form-group">
+                                <label for="Email">Email Address</label>
+                                <input asp-for="Email" type="text" 
+                                class="form-control" name="Email"   id="Email" 
+                                  pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$">
+                                @*<input asp-for="Email" type="text" class="form-control" name="Email"  id="Email"  pattern="^[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{1,4}$" required mailto:placeholder='abc123@email.com'>*@
+                                <span class="icon">
+                                  <i class='bx bx-envelope'></i>
+                                </span>
+                             </div>
+                             <div class="form-group">
+                              <label for="Password">Password</label>
+                              <input asp-for="Password" type="Password" class="form-control" name="Password">
+                              <span class="icon">
+                                  <i id="eye" class="fa fa-eye-slash"></i>
+                              </span>
+                            </div>
+                            <div class="form-group remember-txt" style="margin-bottom:12px;">
+                               <div class="row justify-content-between pl-3 pr-4" id="remember-filed">
+                                   <div class="submit-btn">
+                                        <button type="submit" id="submit" class="btn btn-primary">Sign In</button>
+                                    </div>
+                                    <a class="col-auto btn btn-link mt-2" href="Admin/CustSubscription/ForgetPassword">Forgot Password</a>
+                               @* <a class="col-auto btn btn-link" href="forgot-password.html">Forgot Password</a>*@
+                              </div>
+                            </div>
+                          
+                          </div>
+                        </form>
+                    </div>
+                  </div>
+              </div>
+            </div>
+             <div class="col-md-6 col-xl-6 col-sm-12 d-xl-block d-lg-block d-none">
+                <div class="row auth-form-pic">
+                    <img class="img-fluid" src="~/custome_containt/images/login-bg.png" alt="Signin">
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+   <script src="~/custome_containt/js/jquery-3.3.1.slim.min.js" asp-append-version="true"></script>
+   <script src="~/custome_containt/js/popper.min.js" asp-append-version="true"></script>
+    <script src="~/custome_containt/js/bootstrap.min.js" asp-append-version="true"></script>
+
+@*JQuery validation CDN files*@
+
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+ 
+ <script type="text/javascript">
+      $(document).ready(function() 
+      debugger;
+            var viewbagdata = '@ViewBag.error';
+             //alert(viewbagdata)
+
+            var viewbagdata = '@ViewBag.error2';
+           // alert(viewbagdata)
+             
+           
+
+
+      $('#signin').validate({
+      rules: {
+         Email: "required",
+         Password: "required",
+          Email: {
+             required: true,
+             email: true
+            //regex:/^([a-zA-Z0-9_.+-])+\@@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/
+
+          },
+          Password: {
+            required: true
+          }
+       },
+
+          messages: {
+            Email: {
+              required: "Please enter email",
+              email: "Your email address must be in the format of name@domain.com"
+            },
+              Password: {
+                required: "Please enter password"
+              }
+
+      },
+
+      
+      highlight: function (element) {
+                $(element).closest('.form-group').addClass('has-error');
+      },
+      unhighlight: function (element) {
+          $(element).closest('.form-group').removeClass('has-error');
+      },
+      errorElement: 'span',
+      errorClass: 'help-block',
+      errorPlacement: function (error, element) {
+          if (element.parent('.input-group').length) {
+              error.insertAfter(element.parent());
+          } else {
+              error.insertAfter(element);
+          }
+      },
+
+      //submitHandler: function(form) {
+      //alert("Form submitted successfully")
+      //form.submit();
+      //}
+      });
+      });
+</script>
+<script type="text/javascript">
+
+        var gaq = gaq || [];
+        _gaq.push(['_setAccount', 'G-G1M30PC13T']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+<script type="text/javascript">
+
+    
+  //password input type change 
+
+$(function(){
+  $('#eye').click(function(){
+
+        if($(this).hasClass('fa-eye-slash')){
+
+          $(this).removeClass('fa-eye-slash');
+
+          $(this).addClass('fa-eye');
+
+          $('#Password').attr('type','text');
+
+        }else{
+
+          $(this).removeClass('fa-eye');
+
+          $(this).addClass('fa-eye-slash');  
+
+          $('#Password').attr('type','password');
+        }
+    });
+});
+</script>
+<script type="text/javascript">
+function RemoveSpace() {
+    alert("call");
+}
+</script>
+     <script src="dist/js/popper.min.js"></script>
+     <script src="dist/js/bootstrap.min.js"></script>
+ </body>
+</html>

@@ -1,0 +1,14 @@
+D:\AplusLatestCode\aplus\aplusautism\aplusautism.Data\bin\Release\net6.0\aplusautism.Data.deps.json
+D:\AplusLatestCode\aplus\aplusautism\aplusautism.Data\bin\Release\net6.0\aplusautism.Data.runtimeconfig.json
+D:\AplusLatestCode\aplus\aplusautism\aplusautism.Data\bin\Release\net6.0\aplusautism.Data.dll
+D:\AplusLatestCode\aplus\aplusautism\aplusautism.Data\bin\Release\net6.0\aplusautism.Data.pdb
+D:\AplusLatestCode\aplus\aplusautism\aplusautism.Data\obj\Release\net6.0\aplusautism.Data.csproj.AssemblyReference.cache
+D:\AplusLatestCode\aplus\aplusautism\aplusautism.Data\obj\Release\net6.0\aplusautism.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\AplusLatestCode\aplus\aplusautism\aplusautism.Data\obj\Release\net6.0\aplusautism.Data.AssemblyInfoInputs.cache
+D:\AplusLatestCode\aplus\aplusautism\aplusautism.Data\obj\Release\net6.0\aplusautism.Data.AssemblyInfo.cs
+D:\AplusLatestCode\aplus\aplusautism\aplusautism.Data\obj\Release\net6.0\aplusautism.Data.csproj.CoreCompileInputs.cache
+D:\AplusLatestCode\aplus\aplusautism\aplusautism.Data\obj\Release\net6.0\aplusautism.Data.dll
+D:\AplusLatestCode\aplus\aplusautism\aplusautism.Data\obj\Release\net6.0\refint\aplusautism.Data.dll
+D:\AplusLatestCode\aplus\aplusautism\aplusautism.Data\obj\Release\net6.0\aplusautism.Data.pdb
+D:\AplusLatestCode\aplus\aplusautism\aplusautism.Data\obj\Release\net6.0\aplusautism.Data.genruntimeconfig.cache
+D:\AplusLatestCode\aplus\aplusautism\aplusautism.Data\obj\Release\net6.0\ref\aplusautism.Data.dll

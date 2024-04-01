@@ -1,0 +1,117 @@
+﻿@model IEnumerable<aplusautism.Bal.DTO.ABuserDTO>
+
+@{
+    Layout = null;
+}
+
+
+
+@if (Model != null)
+{
+
+    @foreach (var clientdata in Model.ToList())
+    {
+        <tr>
+          @*  <td style="text-align:left;">@clientdata.CreatedDate</td>*@
+            <td style="text-align:left;"><a href="~/Admin/CustSubscription/ClientProfile?ClientId=@clientdata.AB_UserID&Clientstatus=@ViewBag.Status">@clientdata.FormatedName</a></td>
+
+            <td style="text-align:left;"><a href="~/Admin/CustSubscription/ClientProfile?ClientId=@clientdata.AB_UserID&Clientstatus=@ViewBag.Status">@clientdata.Email</a></td>
+            <td style="text-align:left;">@clientdata.CountryName</td>
+            @*<td style="text-align:left;">@clientdata.StateName</td>
+            <td style="text-align:left;">@clientdata.CityName</td>*@
+            <td style="text-align:left;">@clientdata.StartDateFormat</td>
+            <td style="text-align:left;">@clientdata.EndDateFormat</td>
+              <td style="text-align:left;">@clientdata.CreatedDate</td>
+
+            @if (clientdata.StatusName == "Active")
+            {
+                <td style="text-align:left;">
+                    <a href="#active_modal" data-toggle="modal" class="activate" style="color:green;">@clientdata.StatusName</a>
+                </td>
+            }
+            else if (clientdata.StatusName == "In-Active")
+            {
+                <td style="text-align:left;">
+                    <a href="#active_modal" data-toggle="modal" class="activate" style="color:red;">Inactive</a>
+                </td>
+            }
+            else if (clientdata.StatusName == "Trial")
+            {
+                <td style="text-align:left;">
+                    <a href="#active_modal" data-toggle="modal" class="activate" style="color:green;">Trial</a>
+                </td>
+            }
+            else if (clientdata.StatusName == "Trial Ended Not Subscribed")
+            {
+                <td style="text-align:left;">
+                    <a href="#active_modal" data-toggle="modal" class="activate" style="color:red;">Trial Ended Not Subscribed</a>
+                </td>
+            }
+            else if (clientdata.StatusName == "Suspend")
+            {
+                <td style="text-align:left;">
+                    <a href="#active_modal" data-toggle="modal" class="activate" style="color:red;">Suspend</a>
+                </td>
+            }else if (clientdata.StatusName == "Deleted")
+            {
+                <td style="text-align:left;">
+                    <a href="#active_modal" data-toggle="modal" class="activate" style="color:red;">Deleted</a>
+                </td>
+            }
+
+           <td class="actionsbtn">
+                                            <a type="button" title="Reminder" class="btn btn-link btn-sm reminder" href="javascript:void(0)" onclick="SendMailNotification(@clientdata.AB_UserID)">
+                                                <i class='bx bxs-bell-ring text-danger'></i>
+                                            </a>
+
+
+                                            @if (clientdata.StatusName == "Active")
+                                            {
+                                                <a type="button" title="Suspend" class="btn btn-link btn-sm suspend" href="javascript:void(0)" onclick="Suspend(@clientdata.AB_UserID)">
+                                                    <i class='bx bx-pause-circle text-success font-size-18'></i>
+                                                </a>
+                                            }
+                                             @if (clientdata.StatusName == "Trial")
+                                            {
+                                                <a type="button" title="Suspend" class="btn btn-link btn-sm suspend" href="javascript:void(0)" onclick="Suspend(@clientdata.AB_UserID)">
+                                                    <i class='bx bx-pause-circle text-success font-size-18'></i>
+                                                </a>
+                                            }
+
+                                             @if (clientdata.StatusName == "Trial Ended Not Subscribed")
+                                            {
+                                                <a type="button" title="Suspend" class="btn btn-link btn-sm suspend" href="javascript:void(0)" onclick="Suspend(@clientdata.AB_UserID)">
+                                                    <i class='bx bx-pause-circle text-success font-size-18'></i>
+                                                </a>
+                                            }
+
+
+                                            @if (clientdata.StatusName == "Suspend")
+                                            {
+                                                <a type="button" title="Active" class="btn btn-link btn-sm active-btn" href="javascript:void(0)" onclick="ActiveClient(@clientdata.AB_UserID)">
+                                                    <i class='bx bxs-check-circle'></i>
+                                                </a>
+                                            }
+                                            @if (clientdata.StatusName == "Deleted")
+                                            {
+                                                <a type="button" title="Active" class="btn btn-link btn-sm active-btn" href="javascript:void(0)" onclick="ActiveClient(@clientdata.AB_UserID)">
+                                                    <i class='bx bxs-check-circle'></i>
+                                                </a>
+                                            }
+
+                                           
+                                           @* <a type="button" title="Extend trial Period" class="btn btn-link btn-sm extend-trial-period" href="javascript:void(0)" onclick="ExtendTimeperiod(@clientdata.AB_UserID)">
+                                                <i class='bx bx-time-five text-primary'></i>
+                                            </a>*@
+                                            <a type="button" title="Delete" data-toggle="modal" href="#DeleteAward" onclick="Clientdeleteid('@clientdata.AB_MainID')" class="btn btn-link btn-sm delete">
+                                                <i class="fa fa-trash text-danger" aria-hidden="true"></i>
+                                            </a>
+                                        </td>
+
+        </tr>
+
+    }
+
+
+}
+

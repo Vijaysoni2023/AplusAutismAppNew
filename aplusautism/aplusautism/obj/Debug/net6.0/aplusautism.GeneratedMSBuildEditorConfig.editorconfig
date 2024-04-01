@@ -1,0 +1,558 @@
+is_global = true
+build_property.XamlSourceGeneratorTracingFolder = 
+build_property.TargetFramework = net6.0
+build_property.TargetFramework = net6.0
+build_property.ProjectTypeGuidsProperty = 
+build_property.MSBuildProjectFullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\aplusautism.csproj
+build_property.RootNamespace = aplusautism
+build_property.RootNamespace = aplusautism
+build_property.RootNamespace = aplusautism
+build_property.DefineConstantsProperty = TRACE,DEBUG,NET,NET6_0,NETCOREAPP,HAS_UNO,UNO_HAS_FRAMEWORKELEMENT_MEASUREOVERRIDE,UNO_HAS_NO_IDEPENDENCYOBJECT,UNO_REFERENCE_API
+build_property.Configuration = Debug
+build_property.IntermediateOutputPath = obj\Debug\net6.0\
+build_property.AndroidApplication = 
+build_property.OutputType = Exe
+build_property.MSBuildProjectName = aplusautism
+build_property.BuildingProject = false
+build_property.DesignTimeBuild = true
+build_property.UnoUISourceGeneratorDebuggerBreak = 
+build_property.BuildingInsideVisualStudio = true
+build_property.IsHotReloadHost = 
+build_property.UnoUseXamlReaderHotReload = true
+build_property.IsUnoHead = 
+build_property.IsUnoHead = 
+build_property.UseWPF = 
+build_property.UnoRemoteControlPort = 
+build_property.UnoRemoteControlHost = 
+build_property.UnoRemoteControlProcessorsPath = 
+build_property.UseUnoXamlParser = 
+build_property.UnoSkipUserControlsInVisualTree = 
+build_property.ShouldWriteErrorOnInvalidXaml = 
+build_property.IsUiAutomationMappingEnabled = 
+build_property.ShouldAnnotateGeneratedXaml = 
+build_property.DefaultLanguage = 
+build_property.UnoPlatformTelemetryOptOut = 
+build_property.UnoPlatformDefaultSymbolsFontFamily = ms-appx:///Uno.Fonts.Fluent/Fonts/uno-fluentui-assets.ttf
+build_property.ExcludeXamlNamespacesProperty = win,not_mux
+build_property.IncludeXamlNamespacesProperty = xamarin,not_win,legacy
+build_property.XamlGeneratorAnalyzerSuppressionsProperty = nventive.Usage-NV0056,nventive.Usage-NV0058,nventive.Usage-NV1003,nventive.Usage-NV0085,nventive.Usage-NV2001,nventive.Usage-NV2003,nventive.Usage-NV2004,nventive.Usage-NV2005,csharp-618 // Ignore obsolete members warnings,csharp-105 // Ignore duplicate namespaces,csharp-1591 // Ignore missing XML comment warnings,csharp-CS8669 // Ignore annotation for nullable reference types,dotnet-CA1001
+build_property.LegacyTypesProperty = 
+build_property.UnoXamlResourcesTrimming = 
+build_property.BaseIntermediateOutputPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\obj\
+build_property.AssemblyName = aplusautism
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.ProjectDir = D:\AplusLatestCode\aplus\aplusautism\aplusautism\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\AplusLatestCode\aplus\aplusautism\aplusautism
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism.Bal/aplusautism.Bal.csproj]
+build_metadata.AdditionalFiles.SourceItemGroup = ProjectReference
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism.Bal\aplusautism.Bal.csproj
+build_metadata.AdditionalFiles.Identity = D:\AplusLatestCode\aplus\aplusautism\aplusautism.Bal\aplusautism.Bal.csproj
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism.Data/aplusautism.Data.csproj]
+build_metadata.AdditionalFiles.SourceItemGroup = ProjectReference
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism.Data\aplusautism.Data.csproj
+build_metadata.AdditionalFiles.Identity = D:\AplusLatestCode\aplus\aplusautism\aplusautism.Data\aplusautism.Data.csproj
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism.Common/aplusautism.Common.csproj]
+build_metadata.AdditionalFiles.SourceItemGroup = ProjectReference
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism.Common\aplusautism.Common.csproj
+build_metadata.AdditionalFiles.Identity = D:\AplusLatestCode\aplus\aplusautism\aplusautism.Common\aplusautism.Common.csproj
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism.Repository/aplusautism.Repository.csproj]
+build_metadata.AdditionalFiles.SourceItemGroup = ProjectReference
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism.Repository\aplusautism.Repository.csproj
+build_metadata.AdditionalFiles.Identity = D:\AplusLatestCode\aplus\aplusautism\aplusautism.Repository\aplusautism.Repository.csproj
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Areas/Admin/Views/CustSubscription/Activeclients.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ3VzdFN1YnNjcmlwdGlvblxBY3RpdmVjbGllbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Areas\Admin\Views\CustSubscription\Activeclients.cshtml
+build_metadata.AdditionalFiles.Identity = Areas\Admin\Views\CustSubscription\Activeclients.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Areas/Admin/Views/CustSubscription/AdminDashboard.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ3VzdFN1YnNjcmlwdGlvblxBZG1pbkRhc2hib2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Areas\Admin\Views\CustSubscription\AdminDashboard.cshtml
+build_metadata.AdditionalFiles.Identity = Areas\Admin\Views\CustSubscription\AdminDashboard.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Areas/Admin/Views/CustSubscription/AdminLogin.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ3VzdFN1YnNjcmlwdGlvblxBZG1pbkxvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Areas\Admin\Views\CustSubscription\AdminLogin.cshtml
+build_metadata.AdditionalFiles.Identity = Areas\Admin\Views\CustSubscription\AdminLogin.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Areas/Admin/Views/CustSubscription/ChangePassword.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ3VzdFN1YnNjcmlwdGlvblxDaGFuZ2VQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Areas\Admin\Views\CustSubscription\ChangePassword.cshtml
+build_metadata.AdditionalFiles.Identity = Areas\Admin\Views\CustSubscription\ChangePassword.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Areas/Admin/Views/CustSubscription/ClientDeatils.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ3VzdFN1YnNjcmlwdGlvblxDbGllbnREZWF0aWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Areas\Admin\Views\CustSubscription\ClientDeatils.cshtml
+build_metadata.AdditionalFiles.Identity = Areas\Admin\Views\CustSubscription\ClientDeatils.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Areas/Admin/Views/CustSubscription/ClientProfile.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ3VzdFN1YnNjcmlwdGlvblxDbGllbnRQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Areas\Admin\Views\CustSubscription\ClientProfile.cshtml
+build_metadata.AdditionalFiles.Identity = Areas\Admin\Views\CustSubscription\ClientProfile.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Areas/Admin/Views/CustSubscription/Components/Headermenu/_Headermenu.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ3VzdFN1YnNjcmlwdGlvblxDb21wb25lbnRzXEhlYWRlcm1lbnVcX0hlYWRlcm1lbnUuY3NodG1s
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Areas\Admin\Views\CustSubscription\Components\Headermenu\_Headermenu.cshtml
+build_metadata.AdditionalFiles.Identity = Areas\Admin\Views\CustSubscription\Components\Headermenu\_Headermenu.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Areas/Admin/Views/CustSubscription/Components/Leftmenu/_LeftMenu.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ3VzdFN1YnNjcmlwdGlvblxDb21wb25lbnRzXExlZnRtZW51XF9MZWZ0TWVudS5jc2h0bWw=
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Areas\Admin\Views\CustSubscription\Components\Leftmenu\_LeftMenu.cshtml
+build_metadata.AdditionalFiles.Identity = Areas\Admin\Views\CustSubscription\Components\Leftmenu\_LeftMenu.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Areas/Admin/Views/CustSubscription/ForgetPassword.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ3VzdFN1YnNjcmlwdGlvblxGb3JnZXRQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Areas\Admin\Views\CustSubscription\ForgetPassword.cshtml
+build_metadata.AdditionalFiles.Identity = Areas\Admin\Views\CustSubscription\ForgetPassword.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Areas/Admin/Views/CustSubscription/LessonDetail.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ3VzdFN1YnNjcmlwdGlvblxMZXNzb25EZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Areas\Admin\Views\CustSubscription\LessonDetail.cshtml
+build_metadata.AdditionalFiles.Identity = Areas\Admin\Views\CustSubscription\LessonDetail.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Areas/Admin/Views/CustSubscription/LiveSession.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ3VzdFN1YnNjcmlwdGlvblxMaXZlU2Vzc2lvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Areas\Admin\Views\CustSubscription\LiveSession.cshtml
+build_metadata.AdditionalFiles.Identity = Areas\Admin\Views\CustSubscription\LiveSession.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Areas/Admin/Views/CustSubscription/PaymentDetails.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ3VzdFN1YnNjcmlwdGlvblxQYXltZW50RGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Areas\Admin\Views\CustSubscription\PaymentDetails.cshtml
+build_metadata.AdditionalFiles.Identity = Areas\Admin\Views\CustSubscription\PaymentDetails.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Areas/Admin/Views/CustSubscription/Plans-oldbk.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ3VzdFN1YnNjcmlwdGlvblxQbGFucy1vbGRiay5jc2h0bWw=
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Areas\Admin\Views\CustSubscription\Plans-oldbk.cshtml
+build_metadata.AdditionalFiles.Identity = Areas\Admin\Views\CustSubscription\Plans-oldbk.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Areas/Admin/Views/CustSubscription/Plans.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ3VzdFN1YnNjcmlwdGlvblxQbGFucy5jc2h0bWw=
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Areas\Admin\Views\CustSubscription\Plans.cshtml
+build_metadata.AdditionalFiles.Identity = Areas\Admin\Views\CustSubscription\Plans.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Areas/Admin/Views/CustSubscription/SignIn.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ3VzdFN1YnNjcmlwdGlvblxTaWduSW4uY3NodG1s
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Areas\Admin\Views\CustSubscription\SignIn.cshtml
+build_metadata.AdditionalFiles.Identity = Areas\Admin\Views\CustSubscription\SignIn.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Areas/Admin/Views/Error/Index-old.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRXJyb3JcSW5kZXgtb2xkLmNzaHRtbA==
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Areas\Admin\Views\Error\Index-old.cshtml
+build_metadata.AdditionalFiles.Identity = Areas\Admin\Views\Error\Index-old.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Areas/Admin/Views/Error/Index.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRXJyb3JcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Areas\Admin\Views\Error\Index.cshtml
+build_metadata.AdditionalFiles.Identity = Areas\Admin\Views\Error\Index.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Areas/Admin/Views/Shared/Components/Headermenu/_Headermenu.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXENvbXBvbmVudHNcSGVhZGVybWVudVxfSGVhZGVybWVudS5jc2h0bWw=
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Areas\Admin\Views\Shared\Components\Headermenu\_Headermenu.cshtml
+build_metadata.AdditionalFiles.Identity = Areas\Admin\Views\Shared\Components\Headermenu\_Headermenu.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Areas/Admin/Views/Shared/Components/Leftmenu/_LeftMenu.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXENvbXBvbmVudHNcTGVmdG1lbnVcX0xlZnRNZW51LmNzaHRtbA==
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Areas\Admin\Views\Shared\Components\Leftmenu\_LeftMenu.cshtml
+build_metadata.AdditionalFiles.Identity = Areas\Admin\Views\Shared\Components\Leftmenu\_LeftMenu.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Areas/Admin/Views/Shared/_adminGoogleAnalytic.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9hZG1pbkdvb2dsZUFuYWx5dGljLmNzaHRtbA==
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Areas\Admin\Views\Shared\_adminGoogleAnalytic.cshtml
+build_metadata.AdditionalFiles.Identity = Areas\Admin\Views\Shared\_adminGoogleAnalytic.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Areas/Admin/Views/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX0FkbWluTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Areas\Admin\Views\_AdminLayout.cshtml
+build_metadata.AdditionalFiles.Identity = Areas\Admin\Views\_AdminLayout.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Areas\Admin\Views\_ViewImports.cshtml
+build_metadata.AdditionalFiles.Identity = Areas\Admin\Views\_ViewImports.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Areas\Admin\Views\_ViewStart.cshtml
+build_metadata.AdditionalFiles.Identity = Areas\Admin\Views\_ViewStart.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Areas/Client/Views/ClientPortal/ChangepassowrdClient.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2xpZW50XFZpZXdzXENsaWVudFBvcnRhbFxDaGFuZ2VwYXNzb3dyZENsaWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Areas\Client\Views\ClientPortal\ChangepassowrdClient.cshtml
+build_metadata.AdditionalFiles.Identity = Areas\Client\Views\ClientPortal\ChangepassowrdClient.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Areas/Client/Views/ClientPortal/ClientDashboard.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2xpZW50XFZpZXdzXENsaWVudFBvcnRhbFxDbGllbnREYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Areas\Client\Views\ClientPortal\ClientDashboard.cshtml
+build_metadata.AdditionalFiles.Identity = Areas\Client\Views\ClientPortal\ClientDashboard.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Areas/Client/Views/ClientPortal/ClientDashboard2.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2xpZW50XFZpZXdzXENsaWVudFBvcnRhbFxDbGllbnREYXNoYm9hcmQyLmNzaHRtbA==
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Areas\Client\Views\ClientPortal\ClientDashboard2.cshtml
+build_metadata.AdditionalFiles.Identity = Areas\Client\Views\ClientPortal\ClientDashboard2.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Areas/Client/Views/ClientPortal/ClientDashboard9.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2xpZW50XFZpZXdzXENsaWVudFBvcnRhbFxDbGllbnREYXNoYm9hcmQ5LmNzaHRtbA==
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Areas\Client\Views\ClientPortal\ClientDashboard9.cshtml
+build_metadata.AdditionalFiles.Identity = Areas\Client\Views\ClientPortal\ClientDashboard9.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Areas/Client/Views/ClientPortal/ClientDetails.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2xpZW50XFZpZXdzXENsaWVudFBvcnRhbFxDbGllbnREZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Areas\Client\Views\ClientPortal\ClientDetails.cshtml
+build_metadata.AdditionalFiles.Identity = Areas\Client\Views\ClientPortal\ClientDetails.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Areas/Client/Views/ClientPortal/Contactus.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2xpZW50XFZpZXdzXENsaWVudFBvcnRhbFxDb250YWN0dXMuY3NodG1s
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Areas\Client\Views\ClientPortal\Contactus.cshtml
+build_metadata.AdditionalFiles.Identity = Areas\Client\Views\ClientPortal\Contactus.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Areas/Client/Views/ClientPortal/LessionDetails.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2xpZW50XFZpZXdzXENsaWVudFBvcnRhbFxMZXNzaW9uRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Areas\Client\Views\ClientPortal\LessionDetails.cshtml
+build_metadata.AdditionalFiles.Identity = Areas\Client\Views\ClientPortal\LessionDetails.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Areas/Client/Views/ClientPortal/Payment.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2xpZW50XFZpZXdzXENsaWVudFBvcnRhbFxQYXltZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Areas\Client\Views\ClientPortal\Payment.cshtml
+build_metadata.AdditionalFiles.Identity = Areas\Client\Views\ClientPortal\Payment.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Areas/Client/Views/ClientPortal/SubscriptionBuy.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2xpZW50XFZpZXdzXENsaWVudFBvcnRhbFxTdWJzY3JpcHRpb25CdXkuY3NodG1s
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Areas\Client\Views\ClientPortal\SubscriptionBuy.cshtml
+build_metadata.AdditionalFiles.Identity = Areas\Client\Views\ClientPortal\SubscriptionBuy.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Areas/Client/Views/Shared/Components/ClientHeadermenu/_ClientHeadermenu.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2xpZW50XFZpZXdzXFNoYXJlZFxDb21wb25lbnRzXENsaWVudEhlYWRlcm1lbnVcX0NsaWVudEhlYWRlcm1lbnUuY3NodG1s
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Areas\Client\Views\Shared\Components\ClientHeadermenu\_ClientHeadermenu.cshtml
+build_metadata.AdditionalFiles.Identity = Areas\Client\Views\Shared\Components\ClientHeadermenu\_ClientHeadermenu.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Areas/Client/Views/Shared/Components/ClientLeftmenu/_ClientLeftMenu.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2xpZW50XFZpZXdzXFNoYXJlZFxDb21wb25lbnRzXENsaWVudExlZnRtZW51XF9DbGllbnRMZWZ0TWVudS5jc2h0bWw=
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Areas\Client\Views\Shared\Components\ClientLeftmenu\_ClientLeftMenu.cshtml
+build_metadata.AdditionalFiles.Identity = Areas\Client\Views\Shared\Components\ClientLeftmenu\_ClientLeftMenu.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Areas/Client/Views/_ClientLayout.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2xpZW50XFZpZXdzXF9DbGllbnRMYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Areas\Client\Views\_ClientLayout.cshtml
+build_metadata.AdditionalFiles.Identity = Areas\Client\Views\_ClientLayout.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Areas/Client/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2xpZW50XFZpZXdzXF9WaWV3SW1wb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Areas\Client\Views\_ViewImports.cshtml
+build_metadata.AdditionalFiles.Identity = Areas\Client\Views\_ViewImports.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Areas/Client/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2xpZW50XFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Areas\Client\Views\_ViewStart.cshtml
+build_metadata.AdditionalFiles.Identity = Areas\Client\Views\_ViewStart.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Pages\Error.cshtml
+build_metadata.AdditionalFiles.Identity = Pages\Error.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Pages/_Layout.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Pages\_Layout.cshtml
+build_metadata.AdditionalFiles.Identity = Pages\_Layout.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Pages\_ViewImports.cshtml
+build_metadata.AdditionalFiles.Identity = Pages\_ViewImports.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Pages\_ViewStart.cshtml
+build_metadata.AdditionalFiles.Identity = Pages\_ViewStart.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Views/Auth/ForgetPassword.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxGb3JnZXRQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Views\Auth\ForgetPassword.cshtml
+build_metadata.AdditionalFiles.Identity = Views\Auth\ForgetPassword.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Views/Auth/Register.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Views\Auth\Register.cshtml
+build_metadata.AdditionalFiles.Identity = Views\Auth\Register.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Views/Auth/SignIn.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxTaWduSW4uY3NodG1s
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Views\Auth\SignIn.cshtml
+build_metadata.AdditionalFiles.Identity = Views\Auth\SignIn.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Views\Home\Index.cshtml
+build_metadata.AdditionalFiles.Identity = Views\Home\Index.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Views\Home\Privacy.cshtml
+build_metadata.AdditionalFiles.Identity = Views\Home\Privacy.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Views\Shared\Error.cshtml
+build_metadata.AdditionalFiles.Identity = Views\Shared\Error.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Views/Shared/_LayoutAplusautism.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBcGx1c2F1dGlzbS5jc2h0bWw=
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Views\Shared\_LayoutAplusautism.cshtml
+build_metadata.AdditionalFiles.Identity = Views\Shared\_LayoutAplusautism.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Views\Shared\_ValidationScriptsPartial.cshtml
+build_metadata.AdditionalFiles.Identity = Views\Shared\_ValidationScriptsPartial.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Views\_ViewImports.cshtml
+build_metadata.AdditionalFiles.Identity = Views\_ViewImports.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Views\_ViewStart.cshtml
+build_metadata.AdditionalFiles.Identity = Views\_ViewStart.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/AplusLatestCode/aplus/aplusautism/aplusautism/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.SourceItemGroup = 
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.FullPath = D:\AplusLatestCode\aplus\aplusautism\aplusautism\Views\Shared\_Layout.cshtml
+build_metadata.AdditionalFiles.Identity = Views\Shared\_Layout.cshtml
+build_metadata.AdditionalFiles.XamlRuntime = 
+build_metadata.AdditionalFiles.CssScope = b-a1a2rive1i

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "DPz54uWuCZi68T/cIK8nubGvRVUntmYDAuIuUd/DBLe0VFGF38pPpZQEfD7xwhVKjPe9C6FqI1bJs5F5GuZJyA==",
+  "success": true,
+  "projectFilePath": "D:\\AplusLatestCode\\AplusAutismApp_2024\\aplusautism\\aplusautism.Common\\aplusautism.Common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.hosting.windowsservices\\6.0.9\\microsoft.aspnetcore.hosting.windowsservices.6.0.9.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.serviceprocess.servicecontroller\\6.0.0\\system.serviceprocess.servicecontroller.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

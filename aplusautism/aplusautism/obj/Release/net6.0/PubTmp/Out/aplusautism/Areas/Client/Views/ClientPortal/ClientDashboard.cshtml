@@ -1,0 +1,507 @@
+﻿@model IEnumerable<aplusautism.Bal.DTO.LessonDetailsbycategoryDTO>
+@{
+    //var DRM_Web_Details = ViewBag.DRM_Details_Web ;
+    //var DRM_Mobile_Details = ViewBag.DRM_Details_Mobile;
+    ////var DRM_Web_Details = ViewBag.DRM_Details_Web;
+    ////var DRM_Mobile_Details = ViewBag.DRM_Details_Mobile;
+    //var test = Model.FirstOrDefault().DRM_Video_Details_Web.License_fairPlay;
+    //var DRM_VideoDetails = Model.FirstOrDefault();
+}
+
+@*NEW PLAYER IMPLEMENTATION-START*@
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+@*<title>APlusAutism</title>
+    <link rel = "icon" href = "https://aplusautismlms.azurewebsites.net/custome_containt/images/logo.png" type = "image/x-icon">*@
+<link rel="stylesheet" href="https://player-sdk.muvi.com/web/video/v6.0.0/muvi-player-bundle.css" />
+<style type="text/css">
+    body {
+        margin: 0;
+        padding: 0;
+    }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://player-sdk.muvi.com/web/video/v6.0.0/muvi-player-bundle.js"></script>
+@*NEW PLAYER IMPLEMENTATION-END*@
+
+<div class="main-content container-fluid" style="position:relative;">
+    <div class="row">
+        @* <div style="display:none;">
+        <button id="id-stop-button" disabled>
+        Stop and clear MediaStream
+        </button>
+        <h3 id="id-title">Device labels</h3>
+        <div id="id-device-labels"></div>
+        </div>*@
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header clientdashboard">
+                    <div class="col-md-12">
+                        <div class="row" id="lesson-category-block">
+                            <ul class="list-unstyled mb-0">
+                                @foreach (var lessoncategorydata in Model.ToList())
+                                {
+                                    <li>
+                                        <a style="display:none;" href="#">@lessoncategorydata.Categoryname</a>
+                                        <ul class="list-unstyled mb-0">
+
+                                            @if (lessoncategorydata != null)
+                                            {
+                                                if (lessoncategorydata.Lessondeatils != null)
+                                                {
+
+
+                                                    @foreach (var lessiondetails in lessoncategorydata.Lessondeatils)
+                                                    {
+
+                                                        @* <li id="@lessiondetails.LessonSetupID">
+                                        <a href="" class="lessonvideo" onclick="playvideo(@lessiondetails.LessonVideoPath)" data-videourl="@lessiondetails.LessonVideoPath">@lessiondetails.LessonTitle</a>
+
+                                        </li>*@
+
+                                                        @if (@ViewBag.ClientStatusCheck == "1")
+                                                        {
+                                                            @* Commented by S for hide title *@
+                                                            @* <li id="@lessiondetails.LessonSetupID">
+                                        <a href="" class="lessonvideo" data-videourl="@lessiondetails.LessonVideoPath">@lessiondetails.LessonTitle</a>
+                                        @*<a href="" class="lessonvideo" onclick="playvideo(@lessiondetails.LessonVideoPath)" data-videourl="@lessiondetails.LessonVideoPath">@lessiondetails.LessonTitle</a>
+
+                                        </li>*@
+                                                        }
+                                                        else if (@ViewBag.ClientStatusCheck == "3")
+                                                        {
+                                                            @* Commented by S for hide title *@
+                                                            @*<li id="@lessiondetails.LessonSetupID">
+                                        <a href="" class="lessonvideo" data-videourl="@lessiondetails.LessonTrailVideoPath">@lessiondetails.LessonTitle</a>
+                                        @* <a href="" class="lessonvideo" onclick="playvideo(@lessiondetails.LessonTrailVideoPath)" data-videourl="@lessiondetails.LessonTrailVideoPath">@lessiondetails.LessonTitle</a>
+                                        </li>*@
+                                                        }
+                                                    }
+                                                }
+                                            }
+
+                                        </ul>
+                                    </li>
+                                }
+
+                            </ul>
+                        </div>
+                    </div>
+                    @* <h6 class="mb-0">Lesson Details </h6>*@
+                    <input class="btn btn-md btn-primary" hidden type="button" onclick="myfunction()" value="Display">
+                    @*  <button onclick="pauseVideo()" hidden type="button">
+
+                    </button>*@
+                </div>
+                <div class="card-body">
+                    <div class="lesson-category">
+                        <div class="row">
+                            @* <div class="col-md-5 mb-4 mb-md-0 order-2 order-md-1">
+                            <div id="lesson-category-block">
+                            <ul class="list-unstyled mb-0">
+                            @foreach (var lessoncategorydata in Model.ToList())
+                            {
+                            <li>
+                            <a style="display:none;" href="#">@lessoncategorydata.Categoryname</a>
+                            <ul class="list-unstyled mb-0">
+
+                            @if (lessoncategorydata != null)
+                            {
+                            if (lessoncategorydata.Lessondeatils != null)
+                            {
+                            @* <li id="@lessiondetails.LessonSetupID">
+                            <a href="" class="lessonvideo" onclick="playvideo(@lessiondetails.LessonVideoPath)" data-videourl="@lessiondetails.LessonVideoPath">@lessiondetails.LessonTitle</a>
+
+                            </li>
+
+                            @if (@ViewBag.ClientStatusCheck == "1")
+                            {
+                            <li id="@lessiondetails.LessonSetupID">
+                            <a href="" class="lessonvideo"  data-videourl="@lessiondetails.LessonVideoPath">@lessiondetails.LessonTitle</a>
+                            @*<a href="" class="lessonvideo" onclick="playvideo(@lessiondetails.LessonVideoPath)" data-videourl="@lessiondetails.LessonVideoPath">@lessiondetails.LessonTitle</a>
+
+                            </li>
+                            }
+                            else if(@ViewBag.ClientStatusCheck == "3")
+                            {
+                            <li id="@lessiondetails.LessonSetupID">
+                            <a href="" class="lessonvideo"  data-videourl="@lessiondetails.LessonTrailVideoPath">@lessiondetails.LessonTitle</a>
+                            @* <a href="" class="lessonvideo" onclick="playvideo(@lessiondetails.LessonTrailVideoPath)" data-videourl="@lessiondetails.LessonTrailVideoPath">@lessiondetails.LessonTitle</a>
+
+                            </li>
+                            @foreach (var lessiondetails in lessoncategorydata.Lessondeatils)
+                            {
+
+                            @* <li id="@lessiondetails.LessonSetupID">
+                            <a href="" class="lessonvideo" onclick="playvideo(@lessiondetails.LessonVideoPath)" data-videourl="@lessiondetails.LessonVideoPath">@lessiondetails.LessonTitle</a>
+
+                            </li>
+
+                            @if (@ViewBag.ClientStatusCheck == "1")
+                            {
+                            <li id="@lessiondetails.LessonSetupID">
+                            <a href="" class="lessonvideo" onclick="playvideo(@lessiondetails.LessonVideoPath)" data-videourl="@lessiondetails.LessonVideoPath">@lessiondetails.LessonTitle</a>
+
+                            </li>
+                            }
+                            else if (@ViewBag.ClientStatusCheck == "3")
+                            {
+                            <li id="@lessiondetails.LessonSetupID">
+                            <a href="" class="lessonvideo" onclick="playvideo(@lessiondetails.LessonTrailVideoPath)" data-videourl="@lessiondetails.LessonTrailVideoPath">@lessiondetails.LessonTitle</a>
+
+                            </li>
+                            }
+                            }
+                            }
+                            }
+
+                            </ul>
+                            </li>
+                            }
+
+                            </ul>
+                            </div>
+                            </div>*@
+                            <div class="col-md-12 order-1 order-md-2">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="video-frame">
+                                            @*NEW PLAYER IMPLEMENTATION-START*@
+                                            <div id="my-player"></div>
+                                            @*NEW PLAYER IMPLEMENTATION-END*@
+                                            <video style=" display:none;width:100%;max-height:100%; pointer-events:none" autoplay muted loop controls playsinline preload='auto' controlsList="nodownload" id="myVideo">
+                                                @*<video style="width:100%;max-height:100%;" autoplay muted loop controls playsinline preload='none' controlsList="nodownload" id="Maintag">*@
+                                                <source src="">
+                                                Your browser does not support HTML5 video.
+                                            </video>
+
+
+                                            @*  <video style="width:100%;max-height:100%;" autoplay loop id="myVideo">
+                                            <source src="" type="video/mp4">
+                                            Your browser does not support HTML5 video.
+                                            </video>*@
+
+
+                                            @*<video style="width:100%;max-height:100%;display:none;" autoplay muted loop controls playsinline preload='none' controlsList="nodownload" id="lessonvideoclient">
+                                            <source src="" type="video/mp4">
+                                            Your browser does not support HTML5 video.
+                                            </video>*@
+
+                                            <div class="btngrup-row">
+                                                <div class="col-md-12">
+                                                    <h3>Controls</h3>
+                                                </div>
+                                                <div class="controls-block">
+                                                    <button id="myBtn" class="btn btn-info" onclick="myFunction()">Play</button>
+                                                    @*   <button id="myMuteBtn" class="btn btn-info" onclick="MuteButton()">Mute</button>
+                                                    <button id="myunMuteBtn" class="btn btn-info" onclick="UnMuteButton()">Un Mute</button>*@
+                                                    @*NEW PLAYER IMPLEMENTATION-START*@
+                                                    @*<button id="fullscreen" class="btn btn-success" onclick="goFullscreen('myVideo'); return false">Full Screen</button>*@
+                                                    <button id="fullscreen" class="btn btn-success" onclick="goFullscreen_Movi('myVideo'); return false">Full Screen</button>
+                                                    @*NEW PLAYER IMPLEMENTATION-START*@
+                                                </div>
+                                            </div>
+                                            @* <video style="width:100%;max-height:100%;" autoplay muted loop controls playsinline preload='none' controlsList="nodownload" id="lessonvideoclient">
+                                            <source src="" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                            </video>
+                                            <h6>Video Player</h6>*@
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @* <video autoplay loop id="myVideo">
+        <source src="" type="video/mp4">
+        Your browser does not support HTML5 video.
+        </video>
+
+        <div class="col-md-12">
+        <button id="myBtn" class="btn btn-md btn-primay" onclick="myFunction()">Pause</button>
+        </div>*@
+    </div>
+</div>
+
+
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial;
+        font-size: 17px;
+    }
+
+    /* #myVideo {
+                                position: fixed;
+                                right: 0;
+                                bottom: 0;
+                                min-width: 100%;
+                                min-height: 100%;
+                                }*/
+
+
+    .content {
+        /* position: fixed;*/
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        color: #f1f1f1;
+        width: 100%;
+        padding: 20px;
+    }
+
+</style>
+
+<script src="~/custom_js/clientlessondetails.js"></script>
+
+
+
+<script type="text/javascript">
+debugger;
+    var video = document.getElementById("myVideo");
+    var btn = document.getElementById("myBtn");
+
+    function myFunction() {
+        video.play();
+        $("#myBtn").css("display", "none");
+        //if (video.paused) {
+        //    video.play();
+        //    btn.innerHTML = "Pause";
+        //} else {
+        //    video.pause();
+        //    btn.innerHTML = "Play";
+        //}
+    }
+    function goFullscreen(id) {
+        var element = document.getElementById(id);
+        if (element.mozRequestFullScreen) {
+            element.mozRequestFullScreen();
+        } else if (element.webkitRequestFullScreen) {
+            element.webkitRequestFullScreen();
+        }
+    }
+    function goFullscreen_Movi(id) {
+        var all_video_Tags = document.getElementsByTagName('video');
+        var movi_video = all_video_Tags[0];
+        if (movi_video.mozRequestFullScreen) {
+            movi_video.mozRequestFullScreen();
+        } else if (movi_video.webkitRequestFullScreen) {
+            movi_video.webkitRequestFullScreen();
+        }
+    }
+
+    function MuteButton() {
+        $("#myMuteBtn").css("display", "none");
+        $("#myunMuteBtn").css("display", "block");
+
+        $("#myVideo").prop('muted', true);
+    }
+
+    function UnMuteButton() {
+        $("#myMuteBtn").css("display", "block");
+        $("#myunMuteBtn").css("display", "none");
+        $("#myVideo").prop('muted', false);
+    }
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+
+    });
+</script>
+<script type="text/javascript">
+    $(".sidebar-section #lm_clientDashboard").addClass('active');
+    const urlParams = new URLSearchParams(window.location.search);
+    var LessonNameQS = urlParams.get('LessonName');
+    if (LessonNameQS != null) {
+        LessonNameQS = LessonNameQS.replaceAll(' ', '');
+    }
+
+    if (LessonNameQS != null && $('#' + LessonNameQS).length > 0) {
+        $('#' + LessonNameQS).addClass('active');
+        $(".sidebar-section #lm_clientDashboard").removeClass('active');
+    }
+
+</script>
+<script type="text/javascript">
+    var Video_source = '';
+var DRM_Config_Source = '';
+    $(document).ready(function() {
+        //$("#myunMuteBtn").css("display", "none");
+
+
+        debugger;
+        var trailPath = '';
+        var FullPath = '';
+        var MobileVideoPAth = '';
+        var videopath = trailPath;
+
+
+
+        var trailPath = '@ViewBag.LessonTrailVedio';
+        var FullPath = '@ViewBag.LessonFullVedio';
+        var MobileVideoPAth = '@ViewBag.LessonMobileVedio';
+
+        //$(this).attr("data-videourl");
+        var MobVideo = MobileVideoPAth;
+
+        // for checking if user is on Trial or  not
+        var ClientStatusCheck = '@ViewBag.ClientStatusCheck';
+        if (ClientStatusCheck === "1") {
+            videopath = FullPath;
+        } else {
+            videopath = trailPath;
+            DRM_web = DRM_Trial;
+            DRM_Mobile = DRM_Trial;
+        }
+
+
+
+        //var videopath = trailPath;//$(this).attr("data-videourl");
+        //var MobVideo = MobileVideoPAth;
+        // for getting Device detail if mobile or Desktop
+        let details = navigator.userAgent;
+        let regexp = /android|iphone|kindle|ipad/i;
+        let isMobileDevice = regexp.test(details);
+
+        debugger;
+        if (!isMobileDevice) {
+            Video_source = videopath;
+            DRM_Config_Source = DRM_web;
+            Init_Mobi_Player();
+            $("#myBtn").css("display", "none");
+            var myVideo = document.getElementById('myVideo');
+            myVideo.crossOrigin = 'anonymous';
+            // myVideo.src = "/" + videopath;
+            //myVideo.src = videopath;
+            //myVideo.load();
+            //myVideo.play();
+            //UnMuteButton();
+
+            //alert("Mobile");
+            // document.write("<h3>Its a Mobile Device !</h3>");
+        } else {
+            Video_source = MobVideo;
+            DRM_Config_Source = DRM_Mobile;
+            Init_Mobi_Player();
+            var myVideo = document.getElementById('myVideo');
+            myVideo.crossOrigin = 'anonymous';
+            // myVideo.src = "/" + MobVideo;
+            //myVideo.src =  MobVideo;
+            //myVideo.load();
+            //myVideo.play();
+            //UnMuteButton();
+
+            //alert("Desktop");
+            //  document.write("<h3>Its a Desktop !</h3>");
+        }
+
+        //var myVideo = document.getElementById('myVideo');
+        //myVideo.crossOrigin = 'anonymous';
+        //myVideo.src = "/" + videopath;
+        //myVideo.load();
+        //myVideo.play();
+        player.player_obj.on("play", function() {
+//alert('play event triggered');
+});
+
+        return false;
+    });
+
+    function SaveDeviceTrackings(Value) {
+
+        $.ajax({
+            type: "POST",
+            url: "/Admin/CustSubscription/SaveDeviceTracking?" + $.param({ DeviceId: Value }),
+            data: Value,
+            success: function(result) {
+            }
+        });
+    }
+
+</script>
+@*<script>
+    //NEW PLAYER IMPLEMENTATION-START
+    var License = '@ViewBag.Player_License'
+    function Init_Mobi_Player() {
+        var config = {
+            playerLicense: License,
+            loadPlugins: true, //load internal plugins
+            container: '#my-player', //id of the div
+            playerType: 'mp4',
+            //playerType: 'drm',
+            //videoSource: 'https://d10xsoss226fg9.cloudfront.net/egSB65NGqxwcjwRL7tZ5XSPBxGwvlvOm/B05C552148D643158A8AD703B26331CC/vl/3ec8a80a49a442c5a728d08ab8aad6ea/20257-finalenglishzoo-1690885912820.mp4',
+            videoSource: 'https://d2qhubmtkumgh4.cloudfront.net/egSB65NGqxwcjwRL7tZ5XSPBxGwvlvOm/B05C552148D643158A8AD703B26331CC/vl/24e67c13fc304035979608a1a58b2e74/videos/stream.mpd',
+            //videoSource: 'https://embed.muvi.com/embed/5d980c98a61f4614abb85c19c26b57fa',
+            //bigPlayPauseButton: "true",
+        }
+        var player = $.fn.playerPlugin(config);
+        //NEW PLAYER IMPLEMENTATION-END
+    }
+</script>*@
+
+@*// DRM Player Code Start*@
+
+<script>
+    // var sourcearray = JSON.parse('@Html.Raw(Json.Serialize(ViewBag.DRM_Details_Web))');
+    var License = '@ViewBag.Player_License'
+    var DRM_web = JSON.parse('@Html.Raw(Json.Serialize(ViewBag.DRM_Details_Web))');
+    var DRM_Mobile = JSON.parse('@Html.Raw(Json.Serialize(ViewBag.DRM_Details_Mobile))');
+    var DRM_Trial = JSON.parse('@Html.Raw(Json.Serialize(ViewBag.DRM_Details_Trial))');
+    /*- Working Code till 09202023-start*/
+            //autoPlay: false,//test for Iphone
+    function Init_Mobi_Player() {
+        debugger;
+        var config = {
+            playerLicense: License,
+            drmType: 2, // DRM type 1-Expressplay, 2-pallycon
+            certificateUri: "https://player-sdk.muvi.com/muvi_fairplay.cer",
+            container: '#my-player',  // id of the div
+            playerType: 'drm',
+            bigPlayPauseButton: "false",
+            hideSeekBar: true,
+            hidePlayButton: true,
+            videoSource: {
+    
+                dash: DRM_Config_Source.video_Source_dash,
+                hls: DRM_Config_Source.video_Source_Hls
+            },
+            license: {
+
+                wideVine: DRM_Config_Source.license_wideVine,
+                playReady: DRM_Config_Source.license_playReady,
+                fairPlay: DRM_Config_Source.license_fairPlay
+
+            },
+        }
+       // $.fn.playerPlugin(config);
+    /*Working Code till 09202023-END
+    */
+    
+        var player = $.fn.playerPlugin(config);
+        player.player_obj.on("pause", function() {
+            console.log('pause event triggered');
+            player.player_obj.play(Video_play(this));
+        });
+
+        
+    }
+function Video_play(evenet) {
+    console.log('Play Event triggered')
+    return false;
+}
+
+</script>
+
+
+
+

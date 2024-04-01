@@ -1,0 +1,32 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<nav id="header" class="navbar navbar-expand navbar-dark">
+            <span id="navbar-logo">
+               @* <h5 class="text-bold text-white m-0">Welcome Patrow</h5>*@
+            </span>
+            <span id="bars" class="d-inline-block align-middle mx-2 cursor-pointer">
+                <i class="fa fa-bars font-size-25 text-white"></i>
+            </span>
+            <ul id="navbar-user" class="ml-2 ms-auto align-items-center navbar-nav">
+                <li style="text-transform:uppercase;">September 09 2022</li>
+            </ul>
+            <ul id="navbar-items-right" class="ml-auto align-items-center navbar-nav">
+                <li class="btn-group nav-item">
+                    <a aria-haspopup="true" href="#" class="py-0 nav-link" aria-expanded="false">
+                        <span class="user-avatar" style="line-height: 32px; height: 32px; width: 32px; background-color: yellowgreen;">K</span>
+                <span class="d-none d-md-inline-block align-middle text-white">Welcome @Model.UserFullName</span>
+                    </a>
+                    <div tabindex="-1" role="menu" aria-hidden="false" class="dropdown-menu dropdown-menu-right">
+                        <div tabindex="0" role="menuitem" class="dropdown-item">
+                            <button type="button" class="btn btn-link btn-sm" onclick="location.href='@Url.Action("LogOutUser", "CustSubscription")'">
+                                @*<button asp-area="Customer" asp-action="LogOutUser" asp-controller="CustSubscription" type="submit" class="btn btn-link btn-sm">*@
+                                <i class="fa fa-sign-out mr-2"></i>Sign Out
+                            </button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>

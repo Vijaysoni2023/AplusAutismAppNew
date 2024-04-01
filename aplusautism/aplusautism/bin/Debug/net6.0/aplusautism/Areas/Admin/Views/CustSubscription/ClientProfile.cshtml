@@ -1,0 +1,289 @@
+﻿@model aplusautism.Bal.DTO.ABuserDTO
+   <script type="text/javascript">
+    $(document).ready(function () {
+        debugger;
+        if ('@ViewBag.LastestSubscriptionlist'!="")
+        {
+        $('#clientdetails').dataTable({
+           "pagingType": "full_numbers",
+           "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
+           "aoColumns": [
+			{ "mDataProp": "engine" },
+			{ "mDataProp": "browser" },
+			{ "mDataProp": "platform" },
+			{ "mDataProp": "version" },
+			{ "mDataProp": "grade" }
+		]
+         });
+
+        }
+    });
+
+</script>
+
+
+<div class="main-content container-fluid">
+    <div class="lessons" style="pointer-events: all;">
+        <div class="mb-2 align-items-center row mx-0">
+            <div class="col-md-6">
+                <div class="row">
+                    <h4 class="text-muted text-bold">Client Profile</h4>
+                </div>
+            </div>
+        </div>
+        <div id="client-profile" class="card">
+            <div class="card-body">
+                <form class="form">
+                    <div class="card">
+                            <div class="card-header py-1 pt-2">
+                                <div class="row">
+                                  <div class="col-md-4">
+                                            <div class="client-bg">
+                                                <img src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg">
+                                             </div>    
+                                       </div>
+                                        <div class="col-md-8">
+                                         @if (@ViewBag.backbutton == "Client")
+                                            {
+                                                <div class="col-12 px-0 text-right">
+                                                    <a href="/Admin/CustSubscription/ClientDeatils?clientstatus=@ViewBag.Clientstatus" class="btn btn-md btn-primary mx-1 mx-lg-2" value="Publish" name="button">Back to Client Detail</a>
+                                                </div>
+                                            }
+                                            else
+                                            {
+                                                <div class="col-12 px-0 text-right">
+                                                    <a href="/Admin/CustSubscription/PaymentDetails" class="btn btn-md btn-primary mx-1 mx-lg-2" value="Publish" name="button">Back to Payment Detail</a>
+                                                </div>
+                                            }
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                               <div class="col-lg-12">
+                                   <div class="row">
+                                       <div class="col-lg-12 clientprofileblock">
+                                            <div class="row justify-content-between">
+                                                <div class="col-md-6">
+                                                    <div class="">
+                                                        <div class="form-group row">
+                                                            <label class="col-md-4 col-form-label" for="clientID">Client Name</label>
+                                                            <div class="col-md-8">
+                                                                <input type="text" class="form-control" name="Client ID" value="@Model.FormatedName" readonly>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label class="col-md-4 col-form-label" for="FirstName">First Name</label>
+                                                           <div class="col-md-8">
+                                                                <input type="text" class="form-control" name="First Name" value="@Model.FirstName" placeholder="Mahesh" readonly>
+                                                           </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label class="col-md-4 col-form-label" for="MiddleName">Middle Name</label>
+                                                            <div class="col-md-8">
+                                                                 <input type="text" class="form-control" name="Middle Name" value="@Model.LastName" placeholder="" readonly>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label class="col-md-4 col-form-label" for="LastName">Last Name</label>
+                                                            <div class="col-md-8">
+                                                                 <input type="text" class="form-control" name="Last Name" value="@Model.LastName" placeholder="Sharma" readonly>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            @*<label for="DateofBirth">Date of Birth</label>
+                                                            <input type="text" class="form-control" name="Date of Birth"  value="@Model.StartDate" >*@
+                                                        </div>
+                                                         <div class="form-group row">
+                                                            <label class="col-md-4 col-form-label" for="Country">Country</label>
+                                                             <div class="col-md-8">
+                                                                 <input type="text" class="form-control" name="Country Name" value="@Model.CountryName" placeholder="" readonly>
+                                                             </div>
+                                                        </div>
+                                                       @* <div class="form-group row">
+                                                        <label class="col-md-4 col-form-label" for="EmailID">City</label>
+                                                             <div class="col-md-8">
+                                                                 <input type="text" class="form-control" name="City" value="@Model.CityName" readonly>
+                                                             </div>
+
+                                                        </div>*@
+                                
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="">
+                                                        <div class="form-group row">
+                                                        <label class="col-md-4 col-form-label" for="TotalPaymentReceived">Total Payment Received</label>
+                                                             <div class="col-md-8">
+                                                                 <input type="text" class="form-control" name="Total Payment Received" value="@String.Format("{0:C}",@Model.TotalAmount)" readonly>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                        <label class="col-md-4 col-form-label" for="StartDate">Start Date</label>
+                                                             <div class="col-md-8">
+                                                            <input type="text" class="form-control" name="Start Date" placeholder="1-Jan-2022" value="@Model.StartDateFormat" readonly>
+                                                             </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label class="col-md-4 col-form-label" for="EndDate">End Date</label>
+                                                             <div class="col-md-8">
+                                                            <input type="text" class="form-control" name="End Date" placeholder="5-Sep-2022" value="@Model.EndDateFormat" readonly>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                        <label class="col-md-4 col-form-label" for="EmailID">Email ID</label>
+                                                             <div class="col-md-8">
+                                                                 <input type="text" class="form-control" name="Email ID" value="@Model.Email" readonly>
+                                                             </div>
+                                                        </div>
+                                                       @* <div class="form-group row">
+                                                        <label class="col-md-4 col-form-label" for="State ">State </label>
+                                                             <div class="col-md-8">
+                                                                 <input type="text" class="form-control" name="State Name" value="@Model.StateName" placeholder="" readonly>
+                                                            </div>
+                                                        </div>*@
+                                                        <div class="form-group">
+                                  
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                       </div>
+                                   </div>
+                               </div>
+                            </div>
+                    </div>
+                   @* @if (@ViewBag.backbutton == "Client")
+                    {
+                        <div class="col-12 px-0 text-right">
+                            <a href="/Admin/CustSubscription/ClientDeatils?clientstatus=@ViewBag.Clientstatus" class="btn btn-md btn-primary mx-1 mx-lg-2" value="Publish" name="button">Back to Client Detail</a>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="col-12 px-0 text-right">
+                            <a href="/Admin/CustSubscription/PaymentDetails" class="btn btn-md btn-primary mx-1 mx-lg-2" value="Publish" name="button">Back to Payment Detail</a>
+                        </div>
+                    }*@
+                   @* <div class="auth-form row justify-content-between">
+                        <div class="col-md-6">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="clientID">Client Name</label>
+                                    <input type="text" class="form-control" name="Client ID" value="@Model.FormatedName" readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label for="FirstName">First Name</label>
+                                    <input type="text" class="form-control" name="First Name" value="@Model.FirstName" placeholder="Mahesh" readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label for="MiddleName">Middle Name</label>
+                                    <input type="text" class="form-control" name="Middle Name" value="@Model.LastName" placeholder="" readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label for="LastName">Last Name</label>
+                                    <input type="text" class="form-control" name="Last Name" value="@Model.LastName" placeholder="Sharma" readonly>
+                                </div>
+                                <div class="form-group">
+                                    @*<label for="DateofBirth">Date of Birth</label>
+                                    <input type="text" class="form-control" name="Date of Birth"  value="@Model.StartDate" >
+                                </div>
+                                 <div class="form-group" style="margin-top: -26px;">
+                                    <label for="Country">Country</label>
+                                    <input type="text" class="form-control" name="Country Name" value="@Model.CountryName" placeholder="" readonly>
+                                </div>
+                                <div class="form-group">
+                                     <label for="EmailID">City</label>
+                                    <input type="text" class="form-control" name="City" value="@Model.CityName" readonly>
+
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="TotalPaymentReceived">Total Payment Received</label>
+                                    <input type="text" class="form-control" name="Total Payment Received" value="@String.Format("{0:#,##0.00}",@Model.TotalAmount)" readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label for="StartDate">Start Date</label>
+                                    <input type="text" class="form-control" name="Start Date" placeholder="1-Jan-2022" value="@Model.StartDate.ToString("yyyy/mm/dd")" readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label for="EndDate">End Date</label>
+                                    <input type="text" class="form-control" name="End Date" placeholder="5-Sep-2022" value="@Model.EndDate.ToString("yyyy/mm/dd")" readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label for="EmailID">Email ID</label>
+                                    <input type="text" class="form-control" name="Email ID" value="@Model.Email" readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label for="State ">State </label>
+                                    <input type="text" class="form-control" name="State Name" value="@Model.StateName" placeholder="" readonly>
+                                </div>
+                                <div class="form-group">
+                                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>*@
+                </form>
+               
+                    <div class="col-12 mt-4 mb-4 text-center">
+                        <div class="row">
+                            <h4 class="col px-0"><b>Subscription Plan List</b></h4>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table id="clientdetails" class="table-bordered table table-sm">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Subscription Plan<span class="sort-direction"></span>
+                                    </th>
+                                    <th>
+                                        Start Date<span class="sort-direction"></span>
+                                    </th>
+
+                                    <th>
+                                        End Date <span class="sort-direction"></span>
+                                    </th>
+                                    <th>Price</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody id="myTable">
+                                @if (@ViewBag.LastestSubscriptionlist != null)
+                                {
+                                    @foreach (var latestSubscription in (List<aplusautism.Bal.DTO.SubscriptionDTO>)ViewBag.LastestSubscriptionlist)
+                                    {
+                                        <tr>
+                                            <td>@latestSubscription.SchemeName</td>
+                                            <td>@latestSubscription.StartDateFormat</td>
+                                            <td>@latestSubscription.EndDateFormat</td>
+                                            <td>@String.Format("{0:#,##0.00}", @latestSubscription.Price) </td>
+                                            <td style="color:green;">Active</td>
+                                        </tr>
+
+                                    }
+                                }
+                                else
+                                {
+                                    <tr>
+                                        <td colspan="5">No record</td>
+                                    </tr>
+                                }
+
+                            </tbody>
+                        </table>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+$(".sidebar-section #lm_Admin").addClass('active');
+</script>

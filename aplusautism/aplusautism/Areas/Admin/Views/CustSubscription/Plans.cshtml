@@ -1,0 +1,120 @@
+﻿@model IEnumerable<aplusautism.Data.Models.SubscriptionSetup>
+
+
+ 
+        
+          <div class="main-content container-fluid">
+            <div class="subscriptionplan" style="pointer-events: all;">
+              <div class="card">
+                <div class="card-body">
+                    <section class="pricing-section">
+                        <div class="container-fluid">
+                            <div class="sec-title text-center">
+                                <span class="title">Get plan</span>
+                                <h2 class="mb-0 text-muted text-bold">Edit Subscription Plan</h2>
+                            </div>
+                           <div class="pricing col-12">
+                                <div class="row">
+                                    <!-- Pricing Block -->
+
+                                    @foreach(var subscriptiondata in  Model.ToList())
+                                    {
+                                    <div class="col-md-6 col-lg-4 col-sm-12">
+                                        <div class="row mb-4">
+                                            <div class="col-md-12 col-12 wow fadeInUp">
+                                                <div class="plan">
+                                                        <div class="price-box @subscriptiondata.SchemeName" id="originplan_@subscriptiondata.SubscriptionSetupID">
+
+                                                            <div class="planblockbg">
+                                                                <img class="brozne" src="@subscriptiondata.SubscriptionImage">
+                                                            </div>
+                                                              <div class="planblockcontent">
+                                                                @* <h2 style="text-transform:capitalize;">@subscriptiondata.SchemeName</h2>*@
+                                                               @* @if(subscriptiondata.DurationType=="M")
+                                                                {
+                                                                    <div class="title"><label id="originplanduration_@subscriptiondata.SubscriptionSetupID">@subscriptiondata.Duration Months</label></div>
+                                                                }*@
+
+                                                                @* @if(subscriptiondata.DurationType=="MT")
+                                                                {
+                                                                    <div class="title"><label id="originplanduration_@subscriptiondata.SubscriptionSetupID">@subscriptiondata.Duration Month</label></div>
+                                                                }*@
+                                                           
+                                                                  @if(subscriptiondata.DurationType=="Y")
+                                                                {
+                                                                    <div class="title"><label id="originplanduration_@subscriptiondata.SubscriptionSetupID">@subscriptiondata.Duration Year</label></div>
+                                                                }
+
+                                                                    @*<h4 class="price">
+                                                                <label id="originplanprcie_@subscriptiondata.SubscriptionSetupID"> @String.Format("{0:C}",@subscriptiondata.Price)   </label>
+                                                                    </h4>*@
+                                                             </div>
+                                                        </div>
+
+
+                                                     @* //this div will be visible when edit plan will be clicked*@
+
+                                                        <div id="editplan_@subscriptiondata.SubscriptionSetupID" class="price-box  @subscriptiondata.SchemeName" style="display:none">
+                                                            <div class="planblockbg">
+                                                                <img class="brozne" src="@subscriptiondata.SubscriptionImage">
+                                                            </div>
+                                                            <div class="planblockcontent">
+                                                                 <h2 style="text-transform:uppercase;">@subscriptiondata.SchemeName</h2>
+                                                                <div class="title"><input type="text"  id="editMonth_@subscriptiondata.SubscriptionSetupID" class="inputwidth small" />
+                                                                    <label id="Editplandurationlable_@subscriptiondata.SubscriptionSetupID"> </label>
+                                                                </div>
+                                                                <h4 class="price">
+                                                                    $ <input type="text" maxlength="6" id="editPrice_@subscriptiondata.SubscriptionSetupID" class="inputwidth small" />
+                                                                </h4>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="btn-box" id="originplanDivbutton_@subscriptiondata.SubscriptionSetupID">
+                                                        <a onclick="EditPlan(@subscriptiondata.SubscriptionSetupID)" id="Edit_@subscriptiondata.SubscriptionSetupID" class="py-2 rounded-0 btn btn-warning w-100">Edit Plan</a>
+                                                       </div>
+                                                     @*  //this button will show when edit button will be click*@
+                                                         <div class="btn-box" id="UpdateDivanbutton_@subscriptiondata.SubscriptionSetupID" style="display:none">
+                                                        <a style="float:left;width:50%;" onclick="UpdatePlan(@subscriptiondata.SubscriptionSetupID)" id="Update_@subscriptiondata.SubscriptionSetupID" class="py-2 rounded-0 btn btn-warning">Update Plan</a>
+
+                                                        <a style="float:left;width:50%;" onclick="CancelPlan(@subscriptiondata.SubscriptionSetupID)" id="Cancel_@subscriptiondata.SubscriptionSetupID" class="py-2 rounded-0 btn btn-danger text-white">Cancel</a>
+                                                        </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+<script>
+$(".sidebar-section #lm_Plans").addClass('active');
+</script>
+
+
+<script>
+    //month and dollor value apply Only Allow Numbers in a Text Box
+
+    $(document).ready(function () {
+        $('.price input, .title input').keypress(function (e) {
+        var charCode = (e.which) ? e.which : event.keyCode
+        if (String.fromCharCode(charCode).match(/[^0-9]/g))
+            return false;
+        });
+    });
+</script>
+
+
+
+    <script src="dist/js/popper.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="~/custom_js/customer_plan.js"></script>
+

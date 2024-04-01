@@ -1,0 +1,65 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+@{
+    Layout = null;
+}
+<style>
+    body{
+        background:#dccac8;
+    }
+    .btn {
+    background: #d65a2f;
+    border-color: #d65a2f;
+}
+.crossicon i
+{
+    font-size: 40px;
+    vertical-align: middle;
+    margin: 5px 0 15px;
+    color: #d65a2f;
+}
+</style>
+<div class="container" style="padding:10px;">
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+          <div class="card shadow card-outline-danger" style="border-color: #d65a2f;">
+              <div class="card-header" style="background: #d65a2f;">
+                  <h5 class="card-title text-white">
+                      System Message 
+                  </h5>
+              </div>
+              <div class="card-body">
+                  <div class="jumbotron text-center" style="background: transparent;padding:1em 0;">
+                      <span class="crossicon"><i class="far fa-times-circle"></i></span>
+                    <h5 style="font-weight:400;font-family: sans-serif;">
+                        @*   @ViewBag.ErrorMessage*@
+                        Your session has been expired , Please login again
+                    </h5>
+                    <div class="col-12">Click here to login :
+                        <div class="col-12 mt-3 px-0">
+                         @* <a class="btn btn-primary btn-sm" href="https://aplusautismlms.azurewebsites.net/">Continue</a>
+                          *@
+                            <button type="button" class="btn btn-link btn-sm" onclick="location.href='@Url.Action("LogOutUser", "CustSubscription")'">
+                                 <i class="fa fa-sign-out mr-2"></i>Continue
+                            </button>
+                         </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+       </div>
+    </div>
+</div>
+    <script>
+      $("a[href]").attr("href", "https://aplusautismlms.azurewebsites.net/");
+    </script>
+   @* </div>
+</div>*@

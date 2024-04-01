@@ -1,0 +1,72 @@
+D:\Mahesh sir project\aplusautism\aplusautism\aplusautism.Common\bin\Debug\net6.0\aplusautism.Common.deps.json
+D:\Mahesh sir project\aplusautism\aplusautism\aplusautism.Common\bin\Debug\net6.0\aplusautism.Common.dll
+D:\Mahesh sir project\aplusautism\aplusautism\aplusautism.Common\bin\Debug\net6.0\aplusautism.Common.pdb
+D:\Mahesh sir project\aplusautism\aplusautism\aplusautism.Common\obj\Debug\net6.0\aplusautism.Common.csproj.AssemblyReference.cache
+D:\Mahesh sir project\aplusautism\aplusautism\aplusautism.Common\obj\Debug\net6.0\aplusautism.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mahesh sir project\aplusautism\aplusautism\aplusautism.Common\obj\Debug\net6.0\aplusautism.Common.AssemblyInfoInputs.cache
+D:\Mahesh sir project\aplusautism\aplusautism\aplusautism.Common\obj\Debug\net6.0\aplusautism.Common.AssemblyInfo.cs
+D:\Mahesh sir project\aplusautism\aplusautism\aplusautism.Common\obj\Debug\net6.0\aplusautism.Common.csproj.CoreCompileInputs.cache
+D:\Mahesh sir project\aplusautism\aplusautism\aplusautism.Common\obj\Debug\net6.0\aplusautism.Common.dll
+D:\Mahesh sir project\aplusautism\aplusautism\aplusautism.Common\obj\Debug\net6.0\refint\aplusautism.Common.dll
+D:\Mahesh sir project\aplusautism\aplusautism\aplusautism.Common\obj\Debug\net6.0\aplusautism.Common.pdb
+D:\Mahesh sir project\aplusautism\aplusautism\aplusautism.Common\obj\Debug\net6.0\ref\aplusautism.Common.dll
+D:\03A_plus\Code\aplusautism\aplusautism\aplusautism.Common\bin\Debug\net6.0\aplusautism.Common.deps.json
+D:\03A_plus\Code\aplusautism\aplusautism\aplusautism.Common\bin\Debug\net6.0\aplusautism.Common.dll
+D:\03A_plus\Code\aplusautism\aplusautism\aplusautism.Common\bin\Debug\net6.0\aplusautism.Common.pdb
+D:\03A_plus\Code\aplusautism\aplusautism\aplusautism.Common\obj\Debug\net6.0\aplusautism.Common.csproj.AssemblyReference.cache
+D:\03A_plus\Code\aplusautism\aplusautism\aplusautism.Common\obj\Debug\net6.0\aplusautism.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\03A_plus\Code\aplusautism\aplusautism\aplusautism.Common\obj\Debug\net6.0\aplusautism.Common.AssemblyInfoInputs.cache
+D:\03A_plus\Code\aplusautism\aplusautism\aplusautism.Common\obj\Debug\net6.0\aplusautism.Common.AssemblyInfo.cs
+D:\03A_plus\Code\aplusautism\aplusautism\aplusautism.Common\obj\Debug\net6.0\aplusautism.Common.csproj.CoreCompileInputs.cache
+D:\03A_plus\Code\aplusautism\aplusautism\aplusautism.Common\obj\Debug\net6.0\aplusautism.Common.dll
+D:\03A_plus\Code\aplusautism\aplusautism\aplusautism.Common\obj\Debug\net6.0\refint\aplusautism.Common.dll
+D:\03A_plus\Code\aplusautism\aplusautism\aplusautism.Common\obj\Debug\net6.0\aplusautism.Common.pdb
+D:\03A_plus\Code\aplusautism\aplusautism\aplusautism.Common\obj\Debug\net6.0\ref\aplusautism.Common.dll
+D:\Mahesh sir project\Aplus\aplus\aplusautism\aplusautism.Common\bin\Debug\net6.0\aplusautism.Common.deps.json
+D:\Mahesh sir project\Aplus\aplus\aplusautism\aplusautism.Common\bin\Debug\net6.0\aplusautism.Common.dll
+D:\Mahesh sir project\Aplus\aplus\aplusautism\aplusautism.Common\bin\Debug\net6.0\aplusautism.Common.pdb
+D:\Mahesh sir project\Aplus\aplus\aplusautism\aplusautism.Common\obj\Debug\net6.0\aplusautism.Common.csproj.AssemblyReference.cache
+D:\Mahesh sir project\Aplus\aplus\aplusautism\aplusautism.Common\obj\Debug\net6.0\aplusautism.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mahesh sir project\Aplus\aplus\aplusautism\aplusautism.Common\obj\Debug\net6.0\aplusautism.Common.AssemblyInfoInputs.cache
+D:\Mahesh sir project\Aplus\aplus\aplusautism\aplusautism.Common\obj\Debug\net6.0\aplusautism.Common.AssemblyInfo.cs
+D:\Mahesh sir project\Aplus\aplus\aplusautism\aplusautism.Common\obj\Debug\net6.0\aplusautism.Common.csproj.CoreCompileInputs.cache
+D:\Mahesh sir project\Aplus\aplus\aplusautism\aplusautism.Common\obj\Debug\net6.0\aplusautism.Common.dll
+D:\Mahesh sir project\Aplus\aplus\aplusautism\aplusautism.Common\obj\Debug\net6.0\refint\aplusautism.Common.dll
+D:\Mahesh sir project\Aplus\aplus\aplusautism\aplusautism.Common\obj\Debug\net6.0\aplusautism.Common.pdb
+D:\Mahesh sir project\Aplus\aplus\aplusautism\aplusautism.Common\obj\Debug\net6.0\ref\aplusautism.Common.dll
+C:\AplusProject\aplus\aplusautism\aplusautism.Common\bin\Debug\net6.0\aplusautism.Common.deps.json
+C:\AplusProject\aplus\aplusautism\aplusautism.Common\bin\Debug\net6.0\aplusautism.Common.dll
+C:\AplusProject\aplus\aplusautism\aplusautism.Common\bin\Debug\net6.0\aplusautism.Common.pdb
+C:\AplusProject\aplus\aplusautism\aplusautism.Common\obj\Debug\net6.0\aplusautism.Common.csproj.AssemblyReference.cache
+C:\AplusProject\aplus\aplusautism\aplusautism.Common\obj\Debug\net6.0\aplusautism.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\AplusProject\aplus\aplusautism\aplusautism.Common\obj\Debug\net6.0\aplusautism.Common.AssemblyInfoInputs.cache
+C:\AplusProject\aplus\aplusautism\aplusautism.Common\obj\Debug\net6.0\aplusautism.Common.AssemblyInfo.cs
+C:\AplusProject\aplus\aplusautism\aplusautism.Common\obj\Debug\net6.0\aplusautism.Common.csproj.CoreCompileInputs.cache
+C:\AplusProject\aplus\aplusautism\aplusautism.Common\obj\Debug\net6.0\aplusautism.Common.dll
+C:\AplusProject\aplus\aplusautism\aplusautism.Common\obj\Debug\net6.0\refint\aplusautism.Common.dll
+C:\AplusProject\aplus\aplusautism\aplusautism.Common\obj\Debug\net6.0\aplusautism.Common.pdb
+C:\AplusProject\aplus\aplusautism\aplusautism.Common\obj\Debug\net6.0\ref\aplusautism.Common.dll
+E:\GitAPlush\aplus\aplusautism\aplusautism.Common\bin\Debug\net6.0\aplusautism.Common.deps.json
+E:\GitAPlush\aplus\aplusautism\aplusautism.Common\bin\Debug\net6.0\aplusautism.Common.dll
+E:\GitAPlush\aplus\aplusautism\aplusautism.Common\bin\Debug\net6.0\aplusautism.Common.pdb
+E:\GitAPlush\aplus\aplusautism\aplusautism.Common\obj\Debug\net6.0\aplusautism.Common.csproj.AssemblyReference.cache
+E:\GitAPlush\aplus\aplusautism\aplusautism.Common\obj\Debug\net6.0\aplusautism.Common.GeneratedMSBuildEditorConfig.editorconfig
+E:\GitAPlush\aplus\aplusautism\aplusautism.Common\obj\Debug\net6.0\aplusautism.Common.AssemblyInfoInputs.cache
+E:\GitAPlush\aplus\aplusautism\aplusautism.Common\obj\Debug\net6.0\aplusautism.Common.AssemblyInfo.cs
+E:\GitAPlush\aplus\aplusautism\aplusautism.Common\obj\Debug\net6.0\aplusautism.Common.csproj.CoreCompileInputs.cache
+E:\GitAPlush\aplus\aplusautism\aplusautism.Common\obj\Debug\net6.0\aplusautism.Common.dll
+E:\GitAPlush\aplus\aplusautism\aplusautism.Common\obj\Debug\net6.0\refint\aplusautism.Common.dll
+E:\GitAPlush\aplus\aplusautism\aplusautism.Common\obj\Debug\net6.0\aplusautism.Common.pdb
+E:\GitAPlush\aplus\aplusautism\aplusautism.Common\obj\Debug\net6.0\ref\aplusautism.Common.dll
+D:\AplusLatestCode\aplus\aplusautism\aplusautism.Common\bin\Debug\net6.0\aplusautism.Common.deps.json
+D:\AplusLatestCode\aplus\aplusautism\aplusautism.Common\bin\Debug\net6.0\aplusautism.Common.dll
+D:\AplusLatestCode\aplus\aplusautism\aplusautism.Common\bin\Debug\net6.0\aplusautism.Common.pdb
+D:\AplusLatestCode\aplus\aplusautism\aplusautism.Common\obj\Debug\net6.0\aplusautism.Common.csproj.AssemblyReference.cache
+D:\AplusLatestCode\aplus\aplusautism\aplusautism.Common\obj\Debug\net6.0\aplusautism.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\AplusLatestCode\aplus\aplusautism\aplusautism.Common\obj\Debug\net6.0\aplusautism.Common.AssemblyInfoInputs.cache
+D:\AplusLatestCode\aplus\aplusautism\aplusautism.Common\obj\Debug\net6.0\aplusautism.Common.AssemblyInfo.cs
+D:\AplusLatestCode\aplus\aplusautism\aplusautism.Common\obj\Debug\net6.0\aplusautism.Common.csproj.CoreCompileInputs.cache
+D:\AplusLatestCode\aplus\aplusautism\aplusautism.Common\obj\Debug\net6.0\aplusautism.Common.dll
+D:\AplusLatestCode\aplus\aplusautism\aplusautism.Common\obj\Debug\net6.0\refint\aplusautism.Common.dll
+D:\AplusLatestCode\aplus\aplusautism\aplusautism.Common\obj\Debug\net6.0\aplusautism.Common.pdb
+D:\AplusLatestCode\aplus\aplusautism\aplusautism.Common\obj\Debug\net6.0\ref\aplusautism.Common.dll

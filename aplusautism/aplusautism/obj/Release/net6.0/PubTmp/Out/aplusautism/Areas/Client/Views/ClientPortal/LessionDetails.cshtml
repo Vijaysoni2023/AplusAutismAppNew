@@ -1,0 +1,61 @@
+﻿@model IEnumerable<aplusautism.Bal.DTO.LessonDetailsbycategoryDTO>
+
+
+<div class="main-content container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h6 class="mb-0">Lesson Details</h6>
+                </div>
+                <div class="card-body">
+                    <div class="lesson-category">
+                        <div class="row">
+                            <div class="col-md-5 mb-4 mb-md-0">
+                                <div id="lesson-category-block">
+                                    <ul class="list-unstyled mb-0">
+                                        @foreach(var lessoncategorydata in Model.ToList())
+                                        {
+                                        <li>
+                                                <a href="#">@lessoncategorydata.Categoryname</a>
+                                            <ul class="list-unstyled mb-0">
+
+                                                    @foreach (var lessiondetails in lessoncategorydata.Lessondeatils)
+                                                    {
+                                                        <li id="@lessiondetails.LessonSetupID">
+                                                            <a href="" class="lessonvideo"  data-videourl="@lessiondetails.LessonVideoPath">@lessiondetails.LessonTitle</a>
+                                                           @* <a href="" class="lessonvideo" onclick="playvideo(@lessiondetails.LessonVideoPath)" data-videourl="@lessiondetails.LessonVideoPath">@lessiondetails.LessonTitle</a>*@
+                                                        </li>
+                                                    }
+                                               
+                                            </ul>
+                                        </li>  
+                                        }
+                                    
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="video-frame">
+                                            <video style="width:100%;max-height:100%;" autoplay  loop controls id="lessonvideoclient">
+                                                <source src="@Url.Content("/Uploads/30002022/5a4caa8d-470e-4248-849a-bd60cffb029d_SampleVideo_1280x720_1mb.mp4")" type="video/mp4">
+                                                
+                                                Your browser does not support the video tag.</video>
+                                            <h6>Video Player</h6>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/custom_js/clientlessondetails.js"></script>

@@ -1,0 +1,83 @@
+﻿@model aplusautism.Bal.DTO.AdmindashboardViewmodelDTO
+
+
+<div class="main-content container-fluid">
+    <div class="lessons" style="pointer-events: all;">
+        <div class="mb-2 align-items-center row mx-0">
+            <div class="col-md-6">
+                <div class="row">
+                    <h4 class="text-muted text-bold">Admin Dashboard</h4>
+                </div>
+            </div>
+        </div>
+        <div id="admindashboard" class="row">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <div class="card">
+                    <div class="card-header">
+                        <h6 class="mb-0"><b>Payments</b></h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Sum of Amount</th>
+                                            <th>USD</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach(var amountdata in Model.DashBoardpayment)
+
+                                        {
+                                        <tr>
+                                            <td>@amountdata.TimePeriodForTime </td>
+                                                <td><a href="/Admin/CustSubscription/PaymentDetails">@String.Format("{0:C}",@amountdata.PaymentReceived)</a></td>
+                                        </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h6 class="mb-0"><b>Clients</b></h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col table-responsive">
+                                <table class="table table-bordered">
+                                    <tbody>
+
+                                        @foreach(var clientlist in Model.ClientStatusList)
+                                        {
+                                        <tr>
+                                                <th>@clientlist.StatusName</th>
+                                                @*<td><a href="/Admin/CustSubscription/ClientDeatils?clientstatus=@clientlist.StatusName">@clientlist.ClientCount </a></td>*@
+                                                <td><a href="/Admin/CustSubscription/ClientDeatils?clientstatus=@clientlist.statusID">@clientlist.ClientCount </a></td>
+
+                                                
+                                        </tr>
+                                        }
+                                      
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    $(".sidebar-section #lm_Admin").addClass('active');
+</script>
+
+

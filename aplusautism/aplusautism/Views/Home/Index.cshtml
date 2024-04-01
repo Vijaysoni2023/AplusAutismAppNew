@@ -1,0 +1,18 @@
+﻿@model aplusautism.Bal.DTO.UserDTO
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@{
+    ViewData["Title"] = "Authentication";
+}
+ 
+<h1 class="bg-info text-white">Index</h1>
+ <label>User Name: </label>  @Model.UserName
+
+ <br />
+
+<label>Email:</label> @Model.Email
+
+    <a asp-controller="Auth" asp-action="SignOut" class="btn btn-danger">Logout</a>

@@ -1,0 +1,64 @@
+﻿
+<div id="sidebar">
+    <section class="sidebar-section pt-3">
+        <a id="lm_clientDashboard" href="~/Client/ClientPortal/ClientDashboard">
+            <i class="fa fa-list-alt fa-fw sidebar-link-icon"></i>
+            <span class="sidebar-link-text">Client Dashboard</span>
+        </a>
+
+        @*<a style="display:flex;" id="lm_clientDashboard bg-light" href="~/Client/ClientPortal/ClientDashboard">
+            <i class="fa fa-leanpub fa-fw sidebar-link-icon"></i>
+            <span class="sidebar-link-text">@TempData["LeftMenuCheck"]</span>
+        </a>*@
+        
+        @if (TempData["LeftMenuCheck"] != null)
+        {
+            var errors = TempData["LeftMenuCheck"] as List<string>;
+           
+                @foreach (var errorMessage in errors)
+                {
+                    <a style="display:flex;" id=@errorMessage.Replace(" ","") href=@Url.RouteUrl(new { area="Client",controller = "ClientPortal", action = "ClientDashboard" , LessonName = @errorMessage})>
+                        <i class="fa fa-leanpub fa-fw sidebar-link-icon"></i>
+
+
+                        <span class="sidebar-link-text"> @errorMessage </span><br>
+
+                    </a>
+
+
+                }
+           
+        }
+
+       @* @foreach (string lessionname in ViewBag.Results)
+        {
+            <a style="display:flex;" id=@lessionname.Replace(" ","") href=@Url.RouteUrl(new { area="Client",controller = "ClientPortal", action = "ClientDashboard" , LessonName = @lessionname})>
+                <i class="fa fa-leanpub fa-fw sidebar-link-icon"></i>
+
+
+                <span class="sidebar-link-text"> @lessionname </span><br>
+
+            </a>
+        }*@
+        <a id="lm_changePasswordClient" href="~/Client/ClientPortal/ChangepassowrdClient">
+            <i class="fa fa-key fa-fw sidebar-link-icon"></i>
+            <span class="sidebar-link-text">Change Password</span>
+        </a>
+       
+
+         <a id="lm_Contactus" href="~/Client/ClientPortal/Contactus">
+             <i class="fa fa-phone-square fa-fw sidebar-link-icon"></i>
+            <span class="sidebar-link-text">Contact Us</span>
+        </a>    
+        @*<a class="active" aria-current="true" href="~/Client/ClientPortal/LessionDetails">
+            <i class="fa fa-file-video-o fa-fw sidebar-link-icon"></i>
+            <span class="sidebar-link-text">Lessons Details</span>
+        </a>*@
+
+         <a id="lm_subscriptionBuy" href="~/Client/ClientPortal/SubscriptionBuy">
+            <i class="fa fa-list-alt fa-fw sidebar-link-icon"></i>
+            <span class="sidebar-link-text">Subscription Plans</span>
+        </a>
+
+    </section>
+</div>
